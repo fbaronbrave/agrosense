@@ -23,7 +23,7 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vercel/speed-insights": "^1.0.12",
-    "astro": "^4.13.3",
+    "astro": "^4.16.14",
     "astro-i18next": "^1.0.0-beta.21",
     "astro-robots-txt": "^1.0.0",
     "class-variance-authority": "^0.7.0",
