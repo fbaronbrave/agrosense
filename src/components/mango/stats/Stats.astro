@@ -1,0 +1,99 @@
+---
+import { t } from "i18next";
+
+import Title from "@/components/shared/Title.astro";
+import StatCard from "@/components/mango/stats/StatCard.astro";
+import Earth from "@/components/shared/icons/Earth.astro";
+import Ship from "@/components/shared/icons/Ship.astro";
+import Handshake from "@/components/shared/icons/Handshake.astro";
+import Tractor from "@/components/shared/icons/Tractor.astro";
+import BriefcaseBusiness from "@/components/shared/icons/BriefcaseBusiness.astro";
+import Users from "@/components/shared/icons/Users.astro";
+---
+
+<section class="space-y-10 section-stats">
+  <Title title={t('mango.stats.title')} subtitle={String(t('mango.stats.subtitle'))}/>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-y-14 stats-content">
+    <StatCard
+      icon={Earth}
+      plus
+      value={Number(t("mango.stats.items.0.value"))}
+      title={t("mango.stats.items.0.title")}
+      description="mango.stats.items.0.description"
+    />
+    <StatCard
+      icon={Ship}
+      plus
+      value={Number(t("mango.stats.items.1.value"))}
+      title={t("mango.stats.items.1.title")}
+      description="mango.stats.items.1.description"
+    />
+    <StatCard
+      icon={Handshake}
+      plus
+      value={Number(t("mango.stats.items.2.value"))}
+      title={t("mango.stats.items.2.title")}
+      description="mango.stats.items.2.description"
+    />
+    <StatCard
+      icon={Tractor}
+      plus
+      value={Number(t("mango.stats.items.3.value"))}
+      title={t("mango.stats.items.3.title")}
+      description="mango.stats.items.3.description"
+    />
+    <StatCard
+      icon={BriefcaseBusiness}
+      plus
+      value={Number(t("mango.stats.items.4.value"))}
+      title={t("mango.stats.items.4.title")}
+      description="mango.stats.items.4.description"
+    />
+    <StatCard
+      icon={Users}
+      plus
+      value={Number(t("mango.stats.items.5.value"))}
+      title={t("mango.stats.items.5.title")}
+      description="mango.stats.items.5.description"
+    />
+  </div>
+</section>
+
+<script>
+  const section = document.querySelector(".section-stats");
+  const title = section?.querySelector(".title-section");
+  const content = section?.querySelector(".stats-content");
+
+  if (section && title && content) {
+    const children = content.children as unknown as HTMLElement[];
+
+    Array.from(children).forEach((child, index) => {
+      child.style.animationDelay = `${(index + 2) * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          title.classList.add("animate-fade-in-up");
+          title.classList.remove("animate-fade-out-up");
+
+          Array.from(children).forEach((child) => {
+            child.classList.add("animate-fade-in-up");
+            child.classList.remove("animate-fade-out-up");
+          });
+        } else {
+          title.classList.remove("animate-fade-in-up");
+          title.classList.add("animate-fade-out-up");
+
+          Array.from(children).forEach((child) => {
+            child.classList.remove("animate-fade-in-up");
+            child.classList.add("animate-fade-out-up");
+          });
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -25% 0px' });
+
+    observer.observe(section);
+  }
+</script>

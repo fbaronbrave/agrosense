@@ -1,0 +1,260 @@
+---
+import { t } from "i18next";
+
+import Title from "@/components/shared/Title.astro";
+import Input from "@/components/shared/form/Input.astro";
+import Textarea from "@/components/shared/form/Textarea.astro";
+---
+<div
+  id="contact"
+  class="form-section form w-full shadow-[0_0px_40px_-x_rgba(0,0,0,0.3)] px-6 md:px-6 py-20 box-border bg-neutral-50 rounded-xl relative overflow-hidden border"
+>
+  <div
+    id="contact-shadow"
+    class="absolute z-0 w-full h-full form-shadow opacity-15 inset-x-0 -bottom-1/2"
+  >
+  </div>
+
+  <div id="form-box" class="relative z-10 space-y-10">
+    <Title
+      class="flex-col-reverse [&>span]:text-pretty"
+      title={t("contact.title")}
+      subtitle={String(t("contact.subtitle"))}
+    />
+
+    <p class="text-black/70 text-sm text-balance text-center mx-auto max-w-4xl">
+      {t("contact.description")}
+    </p>
+
+    <form id="contact-form" class="w-full max-w-xl mx-auto space-y-4 form-content">
+      <div
+        class="w-full flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <Input
+          required
+          name="name"
+          label={t("contact.form.name.label")}
+          autocomplete="given-name"
+          placeholder={t("contact.form.name.placeholder")}
+        />
+        <Input
+          required
+          name="last-name"
+          label={t("contact.form.last-name.label")}
+          autocomplete="family-name"
+          placeholder={t("contact.form.last-name.placeholder")}
+        />
+      </div>
+      <div
+        class="w-full flex flex-col md:flex-row justify-between items-center gap-4"
+      >
+        <Input
+          required
+          name="email"
+          label={t("contact.form.email.label")}
+          type="email"
+          autocomplete="email"
+          placeholder={t("contact.form.email.placeholder")}
+        />
+        <Input
+          required
+          name="phone"
+          label={t("contact.form.phone.label")}
+          autocomplete="tel"
+          placeholder={t("contact.form.phone.placeholder")}
+        />
+      </div>
+
+      <Input
+        required
+        class="block"
+        name="company"
+        label={t("contact.form.company.label")}
+        autocomplete="organization"
+        placeholder={t("contact.form.company.placeholder")}
+      />
+
+      <Textarea
+        required
+        name="message"
+        label={t("contact.form.message.label")}
+        placeholder={t("contact.form.message.placeholder")}
+        rows={4}
+      />
+      <button
+        type="submit"
+        class="w-full group btn-shiny-parent !px-4 !py-3 bg-primary text-white hover:shadow transition hover:bg-primary-500 disabled:bg-neutral-300 disabled:text-neutral-600 disabled:shadow-none"
+      >
+        <span class="text-sm font-normal group-disabled:text-neutral-400">
+          {t("contact.form.submit")}
+        </span>
+        <div class="btn-shiny-effect group-disabled:hidden">
+          <div class="relative h-full w-8 bg-white/10"></div>
+        </div>
+      </button>
+    </form>
+  </div>
+
+  <div
+    id="confirm-message"
+    class="z-10 relative hidden flex-col justify-center items-center"
+  >
+    <p class="text-center font-bold text-primary text-2xl">
+      {t("contact.form.success.title")}
+    </p>
+    <p class="text-center text-neutral-600 text-sm">
+      {t("contact.form.success.description")}
+    </p>
+    <button
+      id="send-another"
+      type="button"
+      class="group btn-shiny-parent !px-4 !py-2 bg-primary text-white hover:shadow transition hover:bg-primary-500 mt-4"
+    >
+      <span class="text-sm font-normal">
+        {t("contact.form.success.another")}
+      </span>
+      <div class="btn-shiny-effect">
+        <div class="relative h-full w-8 bg-white/10"></div>
+      </div>
+    </button>
+  </div>
+</div>
+
+<script>
+const localeCountry: { [key: string]: string } = {
+  en: "Estados Unidos",
+  es: "España",
+  de: "Alemania",
+  nl: "Países Bajos",
+  ar: "Emiratos Arabes Unidos",
+};
+
+  const formElement = document.getElementById(
+    "contact-form"
+  ) as HTMLFormElement;
+  const formBox = document.getElementById("form-box");
+  const confirmMessage = document.getElementById("confirm-message");
+  const anotherButton = document.getElementById("send-another");
+  const formShadow = document.getElementById("contact-shadow");
+
+  const resetForm = () => {
+    formElement?.reset();
+    formBox?.classList.remove("hidden");
+    formBox?.classList.add("block");
+
+    formShadow?.classList.remove("inset-y-0");
+    formShadow?.classList.add("-bottom-1/2");
+
+    confirmMessage?.classList.remove("flex");
+    confirmMessage?.classList.add("hidden");
+  };
+
+  anotherButton?.addEventListener("click", resetForm);
+  const disableLoadingForm = (isLoading: boolean) => {
+    const formButton = formElement?.querySelector(
+      "button[type=submit]"
+    ) as HTMLButtonElement;
+    const inputs = formElement.querySelectorAll(
+      "input, textarea"
+    ) as NodeListOf<HTMLInputElement>;
+    inputs.forEach((input) => {
+      input.disabled = isLoading;
+    });
+    formButton.disabled = isLoading;
+  };
+
+  if (formElement) {
+    formElement.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const form = e.target as EventTarget as HTMLFormElement;
+      const formData = new FormData(form);
+
+      const formDataObj: { [key: string]: any } = {};
+      formData.forEach((value, key) => {
+        formDataObj[key] = value;
+      });
+      formDataObj.country = localeCountry[document.documentElement.lang];
+
+      disableLoadingForm(true);
+
+      try {
+        await fetch("/api/mail", {
+          method: "POST",
+          body: formData,
+        })
+          .then(() => {
+              formBox?.classList.add("hidden");
+              formBox?.classList.remove("flex");
+
+              formShadow?.classList.add("inset-y-0");
+              formShadow?.classList.remove("-bottom-1/2");
+
+              confirmMessage?.classList.add("flex");
+              confirmMessage?.classList.remove("hidden");
+          })
+          .finally(() => {
+            disableLoadingForm(false);
+          });
+      } catch (error) {
+        console.error(error);
+      }
+    });
+  }
+</script>
+
+<style is:inline>
+  .form {
+    box-shadow: 2px 0px 41px 4px rgba(246, 137, 9, 0.15);
+  }
+
+  .form-shadow {
+    background: rgb(246, 137, 9);
+    background: radial-gradient(
+      circle,
+      rgba(246, 137, 9, 1) 0%,
+      rgba(246, 137, 9, 0) 75%
+    );
+  }
+</style>
+
+<script>
+  const section = document.querySelector(".form-section");
+  const content = section?.querySelector(".form-content");
+  const title = section?.querySelector(".title-section");
+  const text = section?.querySelector('#form-box')?.querySelector('p');
+
+  if (section && content && title && text) {
+    const children = content.children as unknown as HTMLElement[];
+    Array.from(children).forEach((child, index) => {
+      child.style.animationDelay = `${(index + 1) * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          title.classList.add("animate-fade-in-up");
+          title.classList.remove("animate-fade-out-up");
+          text.classList.add("animate-fade-in-up");
+          text.classList.remove("animate-fade-out-up");
+          Array.from(children).forEach((child,) => {
+            child.classList.add("animate-fade-in-up");
+            child.classList.remove("animate-fade-out-up");
+          });
+        } else {
+          title.classList.remove("animate-fade-in-up");
+          title.classList.add("animate-fade-out-up");
+
+          text.classList.remove("animate-fade-in-up");
+          text.classList.add("animate-fade-out-up");
+
+          Array.from(children).forEach((child) => {
+            child.classList.remove("animate-fade-in-up");
+            child.classList.add("animate-fade-out-up");
+          });
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -25% 0px' });
+
+    observer.observe(section);
+  }
+</script>

@@ -1,0 +1,346 @@
+{
+  "nav": [
+    {
+      "title": "Startseite",
+      "url": "/"
+    },
+    {
+      "title": "Limon",
+      "url": "/limon"
+    },
+    {
+      "title": "Mango",
+      "url": "/mango"
+    },
+    {
+      "title": "Export",
+      "url": "/"
+    },
+    {
+      "title": "Farmen",
+      "url": "/"
+    },
+    {
+      "title": "Kontakt",
+      "url": "/"
+    },
+    {
+      "title": "AGB",
+      "url": "/terms-conditions"
+    }
+  ],
+  "footer": {
+    "newsletter": {
+      "title": "Abonnieren Sie unseren Newsletter",
+      "subtitle": "Die neuesten Nachrichten, Artikel und Ressourcen, wöchentlich in Ihrem Posteingang.",
+      "form": {
+        "label": "E-Mail",
+        "placeholder": "max.mustermann@email.com",
+        "submit": "Abonnieren"
+      }
+    },
+    "subfooter": "Entworfen und entwickelt von"
+  },
+  "common": {
+    "learn-more": "Mehr erfahren"
+  },
+  "limon": {
+    "seo": {
+      "title": "Premium Kolumbianischer Früchteexport",
+      "description": "Führender Lieferant von tropischen und exotischen Früchten aus Kolumbien. Wir bieten qualitativ hochwertige frische Früchte für Importeure und Distributoren in den USA, Europa und Asien."
+    },
+    "hero": {
+      "title": "Der Geschmack Kolumbiens",
+      "subtitle": "Limón Tahití<br /> für die Welt",
+      "description": "Wir bringen den lebendigen Geschmack der kolumbianischen Limón Tahití in jeden Winkel der Welt. Jede Limette wird mit Leidenschaft angebaut und mit Stolz exportiert.",
+      "cta": "Broschüre herunterladen"
+    },
+    "stats": {
+      "title": "Warum Tropifresh Limón Tahití wählen?",
+      "subtitle": "Mit Leidenschaft angebaut und mit Stolz exportiert",
+      "items": [
+        {
+          "title": "Globaler Export",
+          "description": "Unsere Limón Tahití überwinden Grenzen und bringen das Beste aus Kolumbien direkt zu Ihnen, ohne einen Hauch von Frische zu verlieren.",
+          "icon": "🌍"
+        },
+        {
+          "title": "Zertifizierte Qualität",
+          "description": "Wir besitzen die <strong>ICA-Zertifizierung</strong> aus Kolumbien, die sicherstellt, dass unsere Limetten den höchsten internationalen Standards entsprechen.",
+          "icon": "🍃"
+        },
+        {
+          "title": "Unvergleichlicher Geschmack",
+          "description": "Die perfekte Balance zwischen Säure und Süße, ideal, um jedes Rezept zu einem kulinarischen Meisterwerk zu machen.",
+          "icon": "🍋"
+        },
+        {
+          "title": "Ganzjährige Verfügbarkeit",
+          "description": "Egal, zu welcher Jahreszeit, Sie haben immer Zugang zu unseren frischen Limetten, denn bei Tropifresh kennt Qualität keine Nebensaison.",
+          "icon": "📅"
+        }
+      ]
+    },
+    "our-story": {
+      "title": "Von unserer Farm zu Ihrem Händler",
+      "subtitle": "Unsere Geschichte",
+      "description": "Wir sind stolz darauf, Pioniere im maritimen Früchteexport zu sein und neue Türen für die kolumbianische Landwirtschaft zu öffnen. Hinter jeder Limette steht unser Engagement für Nachhaltigkeit, die Unterstützung von Landwirtschaftsgemeinschaften und den Schutz unserer schönen Umwelt."
+    },
+    "testimonials": {
+      "title": "Was unsere Kunden sagen",
+      "subtitle": "Hören Sie von unseren zufriedenen Kunden über die erstaunliche Qualität und den Geschmack",
+      "items": [
+        {
+          "message": "Die Limón Tahití von Tropifresh sind einfach die besten, die ich je probiert habe. Ihre Frische und ihr Geschmack stechen in jedem Gericht wirklich hervor. Sehr empfehlenswert!",
+          "author": "Carla M."
+        },
+        {
+          "message": "Unsere Cocktails waren noch nie besser. Diese Limetten sind der Star unserer Getränke.",
+          "author": "Javier G."
+        }
+      ]
+    },
+    "call-to-action": {
+      "title": "Bereit, Frische in <br />Ihr Unternehmen zu bringen?",
+      "description": "Warten Sie nicht länger! Füllen Sie das untenstehende Formular aus und genießen Sie die besten Limón Tahití aus Kolumbien. Unser Team ist bereit, Ihnen zu helfen, Ihre Produkte außergewöhnlich zu machen.",
+      "cta": "Loslegen!"
+    }
+  },
+  "mango": {
+    "seo": {
+      "title": "Premium Fruchtexport aus Kolumbien",
+      "description": "Führender Anbieter von tropischen und exotischen Früchten aus Kolumbien. Wir bieten hochwertige frische Früchte für Importeure und Händler in den USA, Europa und Asien."
+    },
+    "hero": {
+      "title": "Der süßeste Geschmack Kolumbiens:",
+      "subtitle": "Mango<br /> de Azúcar",
+      "description": "Wir bringen den reichhaltigen, köstlichen Geschmack der kolumbianischen Zuckermangos in jeden Winkel der Erde. Sorgfältig angebaut und mit Stolz verschickt, bieten unsere Mangos ein tropisches Erlebnis in jedem Bissen.",
+      "cta": "Broschüre herunterladen"
+    },
+    "stats": {
+      "title": "Vom Bauernhof auf den Tisch",
+      "subtitle": "Unser Einfluss in Zahlen",
+      "items": [
+        {
+          "title": "Globale Reichweite",
+          "description": "Tonnen weltweit exportiert",
+          "value": 213
+        },
+        {
+          "title": "US-Markt",
+          "description": "kg Mangos <br /> in die USA exportiert",
+          "value": 154513
+        },
+        {
+          "title": "Landwirte-Netzwerk",
+          "description": "verbündete Landwirte",
+          "value": 330
+        },
+        {
+          "title": "Direkte Arbeitsplätze",
+          "description": "direkte <br /> Beschäftigungsmöglichkeiten",
+          "value": 120
+        },
+        {
+          "title": "Indirekte Arbeitsplätze",
+          "description": "indirekte <br /> Beschäftigungsmöglichkeiten",
+          "value": 1200
+        },
+        {
+          "title": "Beschäftigung",
+          "description": "geschaffene <br /> Arbeitsplätze",
+          "value": 1320
+        }
+      ]
+    },
+    "exporting": {
+      "title": "Unser globaler Fußabdruck",
+      "subtitle": "Kolumbiens Frische in die Welt bringen",
+      "description": "Entdecken Sie, wie unsere Premium-Mangos Kontinente verbinden. Von den sonnigen Plantagen Kolumbiens bis zu den anspruchsvollsten Märkten der Welt steht jedes Ziel für ein Versprechen von Qualität und Geschmack."
+    },
+    "informative": {
+      "title": "Exzellenz in jeder Phase",
+      "subtitle": "Entdecken Sie die Säulen unserer Qualität",
+      "items": [
+        {
+          "title": "Ausgewählte Farmen",
+          "description": "Wir kooperieren mit sorgfältig ausgewählten kolumbianischen Farmen, wo jede Mango mit Hingabe und nachhaltigen Praktiken angebaut wird.",
+          "image": "/images/mango/farms.jpg"
+        },
+        {
+          "title": "Qualitätszertifizierungen",
+          "description": "Unsere Prozesse erfüllen höchste internationale Standards, unterstützt durch Zertifizierungen, die Exzellenz garantieren.",
+          "image": "/images/mango/quality.jpg"
+        },
+        {
+          "title": "Premium-Produkte",
+          "description": "Wir bieten Mangos von höchster Qualität, die sorgfältig ausgewählt werden, um besten Geschmack, Textur und Frische in jeder Lieferung zu gewährleisten.",
+          "image": "/images/mango/products.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Zertifizierungen",
+      "subtitle": "Unser Engagement für Qualität",
+      "items": [
+        {
+          "title": "Kolumbianisches Landwirtschaftsinstitut",
+          "description": "Wir halten uns an ICA-Vorschriften und gewährleisten höchste Qualität und Sicherheit. Unsere PTO-Zertifizierungen für die USA und EU garantieren die Einhaltung der Marktstandards, einschließlich Rückverfolgbarkeits- und Qualitätsanforderungen.",
+          "image": "/images/mango/ica.png"
+        },
+        {
+          "title": "Global G.A.P.",
+          "description": "Diese Zertifizierung unterstützt unsere verantwortungsvollen landwirtschaftlichen Praktiken und gewährleistet Lebensmittelsicherheit und Nachhaltigkeit auf all unseren Farmen.",
+          "image": "/images/mango/globalgap.png"
+        },
+        {
+          "title": "FDA",
+          "description": "Die Einhaltung der HACCP-Vorschriften unterstreicht unser Engagement für Exzellenz in jeder Produktionsphase.",
+          "image": "/images/mango/fda.svg"
+        },
+        {
+          "title": "Business Alliance for Secure Commerce",
+          "description": "Diese Zertifizierung stärkt unser Engagement für die Sicherheit der Lieferkette und schützt unsere Produkte und Abläufe vor Bedrohungen und Risiken.",
+          "image": "/images/mango/basc.svg"
+        }
+      ]
+    }
+  },
+  "home": {
+    "seo": {
+      "title": "Premium Fruchtexport aus Kolumbien",
+      "description": "Führender Anbieter von tropischen und exotischen Früchten aus Kolumbien. Wir bieten hochwertige frische Früchte für Importeure und Händler in den USA, Europa und Asien."
+    },
+    "hero": {
+      "title": "Der süßeste Geschmack Kolumbiens:",
+      "subtitle": "Mango<br /> de Azúcar",
+      "description": "Wir bringen den reichhaltigen, köstlichen Geschmack der kolumbianischen Zuckermangos in jeden Winkel der Erde. Sorgfältig angebaut und mit Stolz verschickt, bieten unsere Mangos ein tropisches Erlebnis in jedem Bissen.",
+      "cta": "Broschüre herunterladen"
+    },
+    "stats": {
+      "title": "Vom Bauernhof auf den Tisch",
+      "subtitle": "Unser Einfluss in Zahlen",
+      "items": [
+        {
+          "title": "Globale Reichweite",
+          "description": "Tonnen weltweit exportiert",
+          "value": 213
+        },
+        {
+          "title": "US-Markt",
+          "description": "kg Mangos <br /> in die USA exportiert",
+          "value": 154513
+        },
+        {
+          "title": "Landwirte-Netzwerk",
+          "description": "verbündete Landwirte",
+          "value": 330
+        },
+        {
+          "title": "Direkte Arbeitsplätze",
+          "description": "direkte <br /> Beschäftigungsmöglichkeiten",
+          "value": 120
+        },
+        {
+          "title": "Indirekte Arbeitsplätze",
+          "description": "indirekte <br /> Beschäftigungsmöglichkeiten",
+          "value": 1200
+        },
+        {
+          "title": "Beschäftigung",
+          "description": "geschaffene <br /> Arbeitsplätze",
+          "value": 1320
+        }
+      ]
+    },
+    "exporting": {
+      "title": "Unser globaler Fußabdruck",
+      "subtitle": "Kolumbiens Frische in die Welt bringen",
+      "description": "Entdecken Sie, wie unsere Premium-Mangos Kontinente verbinden. Von den sonnigen Plantagen Kolumbiens bis zu den anspruchsvollsten Märkten der Welt steht jedes Ziel für ein Versprechen von Qualität und Geschmack."
+    },
+    "informative": {
+      "title": "Exzellenz in jeder Phase",
+      "subtitle": "Entdecken Sie die Säulen unserer Qualität",
+      "items": [
+        {
+          "title": "Ausgewählte Farmen",
+          "description": "Wir kooperieren mit sorgfältig ausgewählten kolumbianischen Farmen, wo jede Mango mit Hingabe und nachhaltigen Praktiken angebaut wird.",
+          "image": "/images/mango/farms.jpg"
+        },
+        {
+          "title": "Qualitätszertifizierungen",
+          "description": "Unsere Prozesse erfüllen höchste internationale Standards, unterstützt durch Zertifizierungen, die Exzellenz garantieren.",
+          "image": "/images/mango/quality.jpg"
+        },
+        {
+          "title": "Premium-Produkte",
+          "description": "Wir bieten Mangos von höchster Qualität, die sorgfältig ausgewählt werden, um besten Geschmack, Textur und Frische in jeder Lieferung zu gewährleisten.",
+          "image": "/images/mango/products.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Zertifizierungen",
+      "subtitle": "Unser Engagement für Qualität",
+      "items": [
+        {
+          "title": "Kolumbianisches Landwirtschaftsinstitut",
+          "description": "Wir halten uns an ICA-Vorschriften und gewährleisten höchste Qualität und Sicherheit. Unsere PTO-Zertifizierungen für die USA und EU garantieren die Einhaltung der Marktstandards, einschließlich Rückverfolgbarkeits- und Qualitätsanforderungen.",
+          "image": "/images/mango/ica.png"
+        },
+        {
+          "title": "Global G.A.P.",
+          "description": "Diese Zertifizierung unterstützt unsere verantwortungsvollen landwirtschaftlichen Praktiken und gewährleistet Lebensmittelsicherheit und Nachhaltigkeit auf all unseren Farmen.",
+          "image": "/images/mango/globalgap.png"
+        },
+        {
+          "title": "FDA",
+          "description": "Die Einhaltung der HACCP-Vorschriften unterstreicht unser Engagement für Exzellenz in jeder Produktionsphase.",
+          "image": "/images/mango/fda.svg"
+        },
+        {
+          "title": "Business Alliance for Secure Commerce",
+          "description": "Diese Zertifizierung stärkt unser Engagement für die Sicherheit der Lieferkette und schützt unsere Produkte und Abläufe vor Bedrohungen und Risiken.",
+          "image": "/images/mango/basc.svg"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Lassen Sie uns in Kontakt treten",
+    "subtitle": "Ihr nächster Premium-Fruchtpartner ist nur eine Nachricht entfernt",
+    "description": "Unser Expertenteam ist bereit, Ihre Anfragen und spezifischen Bedürfnisse zu bearbeiten. Kontaktieren Sie uns noch heute und entdecken Sie, wie wir Ihr idealer Partner für den Import von Premium-Mangos aus Kolumbien sein können.",
+    "form": {
+      "name": {
+        "label": "Vorname",
+        "placeholder": "Max"
+      },
+      "last-name": {
+        "label": "Nachname",
+        "placeholder": "Mustermann"
+      },
+      "email": {
+        "label": "E-Mail",
+        "placeholder": "max.mustermann@email.com"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "+1 (706) 206 9398"
+      },
+      "company": {
+        "label": "Unternehmen",
+        "placeholder": "Mutige Agentur"
+      },
+      "message": {
+        "label": "Nachricht",
+        "placeholder": "Geben Sie Ihre Nachricht ein"
+      },
+      "submit": "Lassen Sie uns sprechen",
+      "success": {
+        "title": "Vielen Dank für Ihre Kontaktaufnahme!",
+        "description": "Wir werden uns in Kürze bei Ihnen melden.",
+        "another": "Eine weitere Nachricht senden"
+      }
+    }
+  }
+}

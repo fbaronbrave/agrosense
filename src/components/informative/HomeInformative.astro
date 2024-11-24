@@ -1,0 +1,67 @@
+---
+import { t } from "i18next";
+
+import Title from "../shared/Title.astro";
+import InformativeCard from "./InformativeCard.astro";
+---
+
+<section class="space-y-10 informative-section">
+  <Title
+    title={t("home.informative.title")}
+    subtitle={String(t("home.informative.subtitle"))}
+  />
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 informative-section-content">
+    <InformativeCard
+      title={t("home.informative.items.0.title")}
+      description={t("home.informative.items.0.description")}
+      image={t("home.informative.items.0.image")}
+    />
+    <InformativeCard
+      title={t("home.informative.items.1.title")}
+      description={t("home.informative.items.1.description")}
+      image={t("home.informative.items.1.image")}
+    />
+    <InformativeCard
+      title={t("home.informative.items.2.title")}
+      description={t("home.informative.items.2.description")}
+      image={t("home.informative.items.2.image")}
+    />
+  </div>
+</section>
+
+<script>
+  const section = document.querySelector(".informative-section");
+  const content = section?.querySelector(".informative-section-content");
+  const title = section?.querySelector(".title-section");
+
+  if (section && content && title) {
+    const children = content.children as unknown as HTMLElement[];
+    Array.from(children).forEach((child, index) => {
+      child.style.animationDelay = `${(index + 1) * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          title.classList.add("animate-fade-in-up");
+          title.classList.remove("animate-fade-out-up");
+          Array.from(children).forEach((child,) => {
+            child.classList.add("animate-fade-in-up");
+            child.classList.remove("animate-fade-out-up");
+          });
+        } else {
+          title.classList.remove("animate-fade-in-up");
+          title.classList.add("animate-fade-out-up");
+
+          Array.from(children).forEach((child) => {
+            child.classList.remove("animate-fade-in-up");
+            child.classList.add("animate-fade-out-up");
+          });
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -25% 0px' });
+
+    observer.observe(section);
+  }
+</script>

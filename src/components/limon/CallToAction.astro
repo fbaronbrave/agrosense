@@ -1,0 +1,63 @@
+---
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+---
+
+<section class="space-y-10">
+  <div class="mx-auto text-center cta-section">
+    <h2
+      class="text-3xl font-bold tracking-tight text-white sm:text-4xl text-balance"
+    >
+      <Trans i18nKey="limon.call-to-action.title">
+        Ready to Bring Freshness <br />to Your Business?
+      </Trans>
+    </h2>
+    <p
+      class="mx-auto mt-6 max-w-3xl text-lg leading-8 text-white/70 text-pretty"
+    >
+      {t("limon.call-to-action.description")}
+    </p>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+      <a
+        href="#contact"
+        class="w-fit group btn-shiny-parent !px-4 !py-3 bg-primary text-white hover:shadow transition hover:bg-primary-500 disabled:bg-neutral-300 disabled:text-neutral-600 disabled:shadow-none"
+      >
+        <span class="text-sm font-normal group-disabled:text-neutral-400">
+          {t("limon.call-to-action.cta")}
+        </span>
+        <div class="btn-shiny-effect group-disabled:hidden">
+          <div class="relative h-full w-8 bg-white/10"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const section = document.querySelector(".cta-section");
+
+  if (section) {
+    const children = section.children as unknown as HTMLElement[];
+    Array.from(children).forEach((child, index) => {
+      child.style.animationDelay = `${(index + 2) * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          Array.from(children).forEach((child,) => {
+            child.classList.add("animate-fade-in-up");
+            child.classList.remove("animate-fade-out-up");
+          });
+        } else {
+          Array.from(children).forEach((child) => {
+            child.classList.remove("animate-fade-in-up");
+            child.classList.add("animate-fade-out-up");
+          });
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -25% 0px' });
+
+    observer.observe(section);
+  }
+</script>

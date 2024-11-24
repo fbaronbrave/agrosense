@@ -1,0 +1,126 @@
+---
+import { t } from "i18next";
+
+import BraveLogo from "./Brave-logo.astro";
+import Logo from "./Logo.astro";
+import Input from "@/components/shared/form/Input.astro";
+import SocialMedia from "@/const/SocialMedia";
+import Navigation from "@/const/Navigation";
+import { LanguageSelector } from "astro-i18next/components";
+---
+
+<footer class="bg-primary z-10">
+  <div class="max-w-7xl mx-auto p-6 py-10 2xl:px-0 box-border transition">
+    <a href="/" class="block w-fit mx-auto sm:mx-0 transition group">
+      <span class="sr-only">Tropifresh</span>
+      <!-- TODO: Animacion chimba -->
+      <Logo class="w-auto h-8 !text-white group-hover:text-black transition" />
+    </a>
+
+    <div
+      class="flex flex-wrap justify-between items-center border-b border-white/40 py-6 box-border gap-6"
+    >
+      <nav class="!flex flex-wrap justify-center items-start gap-x-6 gap-y-2 mx-auto sm:mx-0">
+        {
+          Navigation.map((item) => (
+            <a
+              href={t(item.url)}
+              class="text-white hover:text-black text-sm btn-down-line-hover after:bg-black"
+            >
+              {t(item.name)}
+            </a>
+          ))
+        }
+      </nav>
+      <LanguageSelector
+        showFlag={true}
+        class="bg-white px-4 py-2 box-border w-fit h-fit rounded-md text-black outline-none border mx-auto sm:mr-0"
+      />
+    </div>
+
+    <div
+      class="border-b border-white/40 py-6 box-border flex flex-col md:flex-row justify-between items-center"
+    >
+      <div class="mb-4 md:mb-0">
+        <p
+          class="font-medium text-white text-lg md:text-base text-center md:text-left"
+        >
+          {t("footer.distribution.title")}
+        </p>
+        <p
+          class="text-white text-sm font-light text-pretty text-center md:text-left"
+        >
+          {t("footer.distribution.description")} </br>
+          {t("footer.distribution.description2")} </br>
+          {t("footer.distribution.description3")} </br>
+          {t("footer.distribution.description4")}
+        </p>
+      </div>
+      <div class="mb-4 md:mb-0">
+        <p
+          class="font-medium text-white text-lg md:text-base text-center md:text-left"
+        >
+          <a target="_blank" href={`tel:${t("footer.phone.number")}`}><b>{t("footer.phone.label")}:</b> {t("footer.phone.number")}</a>
+        </p>
+        <p
+          class="font-medium text-white text-lg md:text-base text-center md:text-left"
+        >
+          <a target="_blank" href={`mailto:${t("footer.email.mail")}`}><b>{t("footer.email.label")}:</b> {t("footer.email.mail")}</a>
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="py-6 box-border flex flex-col sm:flex-row justify-between items-center gap-6"
+    >
+      <div class="flex justify-start items-center gap-4">
+        {
+          SocialMedia.filter((item) => item.route).map((item) => (
+            <a href={item.route}>
+              <span class="sr-only">{item.name}</span>
+              <item.icon class="size-5 text-white hover:text-black transition" />
+            </a>
+          ))
+        }
+      </div>
+
+      <a
+        href="https://www.creativekoko.co/"
+        class="text-white text-sm flex justify-start items-base gap-2 group"
+      >
+        {t("footer.subfooter")}
+
+        <BraveLogo class="w-auto h-4 block group-hover:text-black transition" />
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const newsLetterElement = document.getElementById(
+    "newsletter"
+  ) as HTMLFormElement;
+  const inputElement = newsLetterElement?.querySelector(
+    "input"
+  ) as HTMLInputElement;
+
+  if (newsLetterElement) {
+    newsLetterElement.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(newsLetterElement);
+
+      try {
+        inputElement.disabled = true;
+        await fetch("/api/newsletter", {
+          method: "POST",
+          body: formData,
+        }).finally(() => {
+          inputElement.disabled = false;
+          newsLetterElement.reset();
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    });
+  }
+</script>

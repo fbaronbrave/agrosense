@@ -1,0 +1,53 @@
+---
+import { t } from "i18next";
+
+import Title from "@/components/shared/Title.astro";
+import Globe from "@/components/exporting/Globe.tsx";
+---
+
+<section class="space-y-10 section-exporting">
+  <Title
+    title={t("home.exporting.title")}
+    subtitle={String(t("home.exporting.subtitle"))}
+  />
+
+  <div class="m-auto exporting-globe">
+    <Globe client:only="react" />
+  </div>
+
+  <p class="text-center text-balance mx-auto exporting-description">
+    {t("home.exporting.description")}
+  </p>
+</section>
+
+<script>
+  const section = document.querySelector(".section-exporting");
+  const title = section?.querySelector(".title-section");
+  const globe = section?.querySelector(".exporting-globe");
+  const description = section?.querySelector(".exporting-description");
+
+  if (section && title && globe && description) {
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          title.classList.add("animate-fade-in-up");
+          title.classList.remove("animate-fade-out-up");
+          globe.classList.add("animate-fade-in-up");
+          globe.classList.remove("animate-fade-out-up");
+          description.classList.add("animate-fade-in-up");
+          description.classList.remove("animate-fade-out-up");
+        } else {
+          title.classList.remove("animate-fade-in-up");
+          title.classList.add("animate-fade-out-up");
+          globe.classList.remove("animate-fade-in-up");
+          globe.classList.add("animate-fade-out-up");
+          description.classList.remove("animate-fade-in-up");
+          description.classList.add("animate-fade-out-up");
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -45% 0px' });
+
+    observer.observe(section);
+  }
+</script>

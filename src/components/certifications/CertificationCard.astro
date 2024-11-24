@@ -1,0 +1,42 @@
+---
+import { t } from "i18next";
+
+import { cn } from "@/lib/utils";
+import Card from "@/components/shared/Card.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  className?: string;
+}
+
+const { title, description, image, className } = Astro.props;
+---
+
+<Card direction="row" className={cn("max-w-3xl grid grid-rows-[auto,1fr] lg:grid-rows-1 lg:grid-cols-2", className)}>
+  <div class="w-full h-full rounded-lg flex justify-center items-center py-10 box-border">
+    <img
+      src={image}
+      alt={title}
+      class="w-full h-auto max-w-[125px] m-auto"
+    />
+  </div>
+  <div class="space-y-2 flex flex-col justify-between items-start">
+    <div class="space-y-2">
+      <h3 class="text-primary font-bold text-xl">{title}</h3>
+      <p class="text-black text-pretty text-sm mb-4">
+        {description}
+      </p>
+    </div>
+    <a
+      href=""
+      class="group btn-shiny-parent !px-4 !py-2 bg-primary text-white hover:shadow transition hover:bg-primary-500 !mt-4 md:!mt-2"
+    >
+      <span class="text-sm font-normal">{t('common.learn-more')}</span>
+      <div class="btn-shiny-effect">
+        <div class="relative h-full w-8 bg-white/10"></div>
+      </div>
+    </a>
+  </div>
+</Card>

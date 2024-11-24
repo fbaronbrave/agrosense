@@ -1,0 +1,139 @@
+---
+export const prerender = true;
+import Layout from "@/layouts/Layout.astro";
+import { AstroSeo } from "@astrolib/seo";
+import { changeLanguage } from "i18next";
+
+changeLanguage("es");
+---
+
+<AstroSeo
+  title="Términos y condiciones | Tropifresh"
+  description="Términos y condiciones de Tropifresh"
+  canonical="https://tropifresh-astro.vercel.app"
+  openGraph={{
+    url: "https://tropifresh-astro.vercel.app",
+    title: "Términos y condiciones | Tropifresh",
+    description: "Términos y condiciones de Tropifresh",
+    site_name: "Tropifresh",
+    images: [],
+  }}
+/>
+
+<Layout class="py-32">
+  <div class="w-full min-h-screen prose lg:prose-lg mx-auto px-6 box-border">
+    <h1
+      class="font-black text-3xl md:ext-5xl text-center text-secondary uppercase text-balance mb-10"
+    >
+      Terms and conditions
+    </h1>
+
+    <div class="space-y-4">
+      <h2 class="font-bold text-primary text-pretty mb-6">
+        Importance of the BASC Control and Safety Management System
+      </h2>
+      <p>
+        At Tropi Fresh, the BASC Control and Security Management System is a key
+        part of ensuring the integrity of our international trade operations.
+        This globally recognized standard helps us protect our supply chain
+        against threats such as smuggling and other illicit activities, ensuring
+        that our products reach our customers safely and securely Implementing
+        BASC strengthens our ability to manage and control risks, providing an
+        efficient and secure operation that aligns with the expectations of our
+        customers and business partners.
+      </p>
+      <p>
+        In addition to protecting our infrastructure, the BASC GSCS allows us to
+        establish a structured framework for continuous improvement in our
+        security practices. This not only protects Tropi Fresh and our products
+        but also strengthens the confidence of our customers and business
+        partners knowing that we adopt the best practices in the industry.
+        Commitment to BASC manifests our dedication to excellence, safety, and
+        compliance with international standards, ensuring that we deliver
+        high-quality and safe products.
+      </p>
+    </div>
+
+    <div class="space-y-4">
+      <h2 class="font-bold text-xl text-primary text-balance mb-6">
+        Security Policy
+      </h2>
+      <p>
+        At <strong>Tropi Fresh Colombia S.A.S</strong> we are dedicated to the purchase,
+        processing, packing, transportation and export of fresh fruits and vegetables,
+        complying with the highest standards of quality and safety. To protect the
+        integrity of our processes, properties and people, we are committed to:
+      </p>
+
+      <ul class="marker:text-primary">
+        <li>
+          Comply with all legal, regulatory, and other requirements applicable
+          to our activity.
+        </li>
+        <li>
+          Continuously improve our BASC Control and Safety Management System.
+        </li>
+        <li>
+          Implement effective controls and strategies to prevent illicit
+          activities, corruption, bribery, money laundering, and other risks
+          associated with our management.
+        </li>
+        <li>Promote security in the use of information technologies.</li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <h2 class="font-bold text-xl text-primary text-balance mb-6">
+        Corporate social Responsibility Policy
+      </h2>
+      <p>
+        At <strong>Tropi Fresh Colombia S.A.S</strong>, we assume our corporate
+        social responsibility by promoting and protecting human rights in all
+        our operations. We prevent labor abuse, discrimination, forced labor,
+        and child labor, through rigorous control policies through ethical and
+        sustainable practices in our value chain.
+      </p><p>
+        We respect the dignity and diversity of our people, implementing
+        policies to prevent abuse and ensure safe and respectful working
+        conditions.
+      </p><p>
+        We are committed to environmental sustainability, minimizing our
+        ecological impact and promoting the efficient use of resources. We also
+        support the sustainable development of the communities in which we
+        operate through social initiatives that improve quality of life and
+        strengthen social cohesion.
+      </p>
+    </div>
+    <div class="space-y-4">
+      <h2 class="font-bold text-xl text-primary text-balance mb-6">
+        Security Goals
+      </h2>
+      <p>
+        The safety objectives related to the company's BASC Safety and Control
+        Management System are as follows:
+      </p>
+
+      <ul class="marker:text-primary">
+        <li>
+          Increase the effectiveness of the BASC Control and Security Management
+          System through the implementation of continuous improvement actions
+          that strengthen the company's capacity to face threats.
+        </li>
+        <li>
+          Achieve full compliance with all legal and regulatory requirements
+          applicable to the company's activities.
+        </li>
+        <li>
+          Develop and implement a cybersecurity strategy that proactively
+          protects against emerging threats, reducing cybersecurity incidents in
+          the company.
+        </li>
+        <li>
+          Ensure the integrity of all business operations by implementing
+          specific controls to prevent illicit activities, corruption, bribery,
+          and money laundering, reducing the risks associated with these
+          threats.
+        </li>
+      </ul>
+    </div>
+  </div>
+</Layout>

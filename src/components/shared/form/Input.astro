@@ -1,0 +1,24 @@
+---
+import type { HTMLAttributes } from "astro/types";
+import { cn } from "@/lib/utils";
+
+interface Props extends HTMLAttributes<"input"> {
+  class?: string;
+  label: string;
+  name: string;
+}
+
+const { class: className, label, name, ...props } = Astro.props;
+---
+
+<label class={cn("w-full", className)} for={`input-${name}`}>
+  <span class="block text-sm font-semibold leading-6 text-gray-900">
+    {label}
+  </span>
+  <input
+    {...props}
+    class="block mt-1 bg-white px-4 box-border w-full h-10 rounded-md text-black outline-none border focus:border-primary disabled:bg-gray-100 disabled:border-neutral-300"
+    id={`input-${name}`}
+    name={name}
+  />
+</label>

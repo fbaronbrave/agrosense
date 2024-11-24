@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  * {
+    @apply font-sans leading-relaxed scroll-smooth;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer utilities {
+  .btn-down-line-hover {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:translate-y-1 after:bg-neutral-800 after:opacity-0 after:transition after:duration-150 after:ease-in-out hover:after:translate-y-0 hover:after:opacity-100 transition;
+  }
+
+  .btn-shiny-parent {
+    @apply relative inline-flex items-center justify-center overflow-hidden rounded-md px-6 font-medium;
+  }
+
+  .btn-shiny-effect {
+    @apply absolute inset-0 flex h-full w-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)];
+  }
+
+  .gradient-shadow {
+    background: rgb(255,232,169);
+    background: linear-gradient(170deg, #ffe8a9 0%, #441f06 100%);
+  }
+
+  .field-content {
+    field-sizing: content;
+  }
+  .backdrop-blur {
+    backdrop-filter: blur(4px);
+  }
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+.icons-descarga {
+  display: flex;
+  justify-content: space-between;
+}
+.icons-descarga li {
+  max-width: 100px;
+  list-style-type: none;
+}
+.icons-descarga li {
+  max-width: 100px;
+  list-style-type: none;
+} 

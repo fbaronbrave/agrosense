@@ -1,0 +1,25 @@
+---
+import { Trans } from "astro-i18next/components";
+
+interface Props {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+const { title, description, icon } = Astro.props;
+---
+
+<div class="w-full grid grid-rows-[auto,auto,1fr]">
+  <p class="text-5xl mb-2 text-center">{icon}</p>
+  <h3
+    class="text-primary font-bold text-lg md:text-xl capitalize md:mb-3 text-center text-balance"
+  >
+    {title}
+  </h3>
+  <p class="text-balance text-center text-sm md:text-base text-black/70">
+    <Trans i18nKey={description}>
+      Description <br />
+    </Trans>
+  </p>
+</div>

@@ -1,0 +1,23 @@
+---
+interface Props {
+  message: string;
+  author: string;
+}
+
+const { message, author } = Astro.props;
+---
+
+<div
+  class="rounded-lg border bg-card text-card-foreground shadow-sm p-6 space-y-4 bg-white"
+>
+  <figure class="h-full flex flex-col justify-between items-start gap-4">
+    <blockquote class="text-lg leading-normal text-pretty text-black/70">
+      “{message}”
+    </blockquote>
+    <figcaption class="flex items-center gap-x-6">
+      <div class="text-base">
+        <div class="text-primary font-medium">{author}</div>
+      </div>
+    </figcaption>
+  </figure>
+</div>

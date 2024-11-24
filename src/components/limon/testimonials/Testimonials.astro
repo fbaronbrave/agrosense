@@ -1,0 +1,64 @@
+---
+import { t } from "i18next";
+
+import Title from "@/components/shared/Title.astro";
+import TestimonialCard from "@/components/limon/testimonials/TestimonialCard.astro";
+---
+
+<section class="space-y-10 testimonials-section">
+  <div
+    class="max-w-7xl mx-auto py-40 flex flex-col justify-center items-center space-y-10"
+  >
+    <Title
+      title={t("limon.testimonials.title")}
+      subtitle={String(t("limon.testimonials.subtitle"))}
+    />
+
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 max-w-5xl mx-auto testimonials-content">
+      <TestimonialCard
+        message={t("limon.testimonials.items.0.message")}
+        author={t("limon.testimonials.items.0.author")}
+      />
+      <TestimonialCard
+        message={t("limon.testimonials.items.1.message")}
+        author={t("limon.testimonials.items.1.author")}
+      />
+    </div>
+  </div>
+</section>
+
+<script>
+  const section = document.querySelector(".testimonials-section");
+  const title = section?.querySelector(".title-section");
+  const content = section?.querySelector(".testimonials-content");
+
+  if (section && content && title) {
+    const children = content.children as unknown as HTMLElement[];
+    Array.from(children).forEach((child, index) => {
+      child.style.animationDelay = `${(index + 2) * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          title.classList.add("animate-fade-in-up");
+          title.classList.remove("animate-fade-out-up");
+          Array.from(children).forEach((child, index) => {
+            child.classList.add("animate-fade-in-up");
+            child.classList.remove("animate-fade-out-up");
+          });
+        } else {
+          title.classList.remove("animate-fade-in-up");
+          title.classList.add("animate-fade-out-up");
+
+          Array.from(children).forEach((child) => {
+            child.classList.remove("animate-fade-in-up");
+            child.classList.add("animate-fade-out-up");
+          });
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -25% 0px' });
+
+    observer.observe(section);
+  }
+</script>

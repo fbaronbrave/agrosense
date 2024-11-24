@@ -1,0 +1,334 @@
+{
+  "nav": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "Limón",
+      "url": "/limon"
+    },
+    {
+      "title": "Mango",
+      "url": "/mango"
+    },
+    {
+      "title": "Export",
+      "url": "/"
+    },
+    {
+      "title": "Farms",
+      "url": "/"
+    },
+    {
+      "title": "Contact",
+      "url": "/"
+    },
+    {
+      "title": "Terms & Conditions",
+      "url": "/terms-conditions"
+    }
+  ],
+  "footer": {
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "subtitle": "The latest news, articles, and resources, sent to your inbox weekly.",
+      "form": {
+        "label": "Email",
+        "placeholder": "john.doe@email.com",
+        "submit": "Subscribe"
+      }
+    },
+    "subfooter": "Designed and developed by",
+    "distribution":{
+      "title": "Distribution Center",
+      "description":"Zona Franca Las Américas  ",
+      "description2":"Km 16, Ruta Alterna al Puerto - Ruta del Sol II",
+      "description3":"Bodegas 6 y 7 ",
+      "description4": "Santa Marta, Magdalena, Colombia"
+    },
+    "phone":{
+      "label":"Phone",
+      "number":"+1 (706) 206 9398"
+    },
+    "email":{
+      "label":"Email",
+      "mail":"sales@tropifresh.co"
+    }
+  },
+  "common": {
+    "learn-more": "Learn more"
+  },
+  "warning": {
+    "lang": "We apologize for any inconvenience. We are working on the translations, and in case there are any mistakes, please note that we are using artificial intelligence to assist us in this process. Thank you for your understanding."
+  },
+  "limon": {
+    "seo": {
+      "title": "Premium Colombian Fruit Export",
+      "description": "Leading supplier of tropical and exotic fruits from Colombia. We offer high-quality fresh fruits for importers and distributors in the USA, Europe and Asia."
+    },
+    "hero": {
+      "title": "The Taste of Colombia",
+      "subtitle": "Limón Tahití<br /> to the World",
+      "description": "We bring the vibrant taste of Colombia’s Limón Tahití to every corner of the globe. Each lime is cultivated with passion and exported with pride.",
+      "cta": "Download Brochure!"
+    },
+    "stats": {
+      "title": "Why Choose Tropifresh Limón Tahití?",
+      "subtitle": "Grown with passion and exported with pride",
+      "items": [
+        {
+          "title": "Global Export",
+          "description": "Our Limón Tahití cross borders, bringing the best of Colombia straight to your door, without losing an ounce of freshness.",
+          "icon": "🌍"
+        },
+        {
+          "title": "Certified Quality",
+          "description": "We hold the <strong>ICA certification</strong> from Colombia, ensuring our limes meet the highest international standards.",
+          "icon": "🍃"
+        },
+        {
+          "title": "Unmatched Flavor",
+          "description": "The perfect balance of acidity and sweetness, ideal for turning any recipe into a culinary masterpiece.",
+          "icon": "🍋"
+        },
+        {
+          "title": "Year-Round Availability",
+          "description": "No matter the season, you'll always have access to our fresh limes because at Tropifresh, quality knows no off-season.",
+          "icon": "📅"
+        }
+      ]
+    },
+    "our-story": {
+      "title": "From Our Farm to Your Grocer",
+      "subtitle": "Our Story",
+      "description": "We’re proud to be pioneers in maritime fruit export, opening new doors for Colombia’s agricultural industry. Behind every lime is our commitment to sustainability, supporting farming communities, and protecting our beautiful environment."
+    },
+    "testimonials": {
+      "title": "What Our Customers Are Saying",
+      "subtitle": "Hear from our satisfied customers",
+      "items": [
+        {
+          "message": "Tropifresh's Limón Tahití are simply the best I’ve ever tasted. Their freshness and flavor really stand out in any dish. Highly recommended!",
+          "author": "Carla M."
+        },
+        {
+          "message": "Our cocktails have never been better. These limes are the star of our drinks.",
+          "author": "Javier G."
+        }
+      ]
+    },
+    "call-to-action": {
+      "title": "Ready to Bring Freshness to <br />Your Business?",
+      "description": "Don’t wait any longer! Fill out the form below and start enjoying the best Tahiti lime from Colombia. Our team is ready to help you make your products extraordinary.",
+      "cta": "Get started!"
+    }
+  },
+  "mango": {
+    "seo": {
+      "title": "Premium Colombian Fruit Export",
+      "description": "Leading supplier of tropical and exotic fruits from Colombia. We offer high-quality fresh fruits for importers and distributors in the USA, Europe and Asia."
+    },
+    "hero": {
+      "title": "The Sweetest Taste of Colombia:",
+      "subtitle": "Mango<br /> de Azúcar",
+      "description": "We bring the rich, mouthwatering flavor of Colombia’s sugar mangoes to every corner of the globe. Grown with care and shipped with pride, our mangoes are a tropical experience in every bite.",
+      "cta": "Download Brochure!"
+    },
+    "stats": {
+      "title": "From Farm to Table",
+      "subtitle": "Our Impact in Numbers",
+      "items": [
+        {
+          "title": "Global reach",
+          "description": "tons exported worldwide",
+          "value": 213
+        },
+        {
+          "title": "U.S. Market",
+          "description": "kgs of mangos <br /> exported to the USA",
+          "value": 154513
+        },
+        {
+          "title": "Farmer Network",
+          "description": "allied farmers",
+          "value": 330
+        },
+        {
+          "title": "Direct job creation",
+          "description": "direct <br /> employment opportunities",
+          "value": 120
+        },
+        {
+          "title": "Indirect job creation",
+          "description": "indirect <br /> employment opportunities",
+          "value": 1200
+        },
+        {
+          "title": "Employment",
+          "description": "employment <br /> opportunities created",
+          "value": 1320
+        }
+      ]
+    },
+    "exporting": {
+      "title": "Our Global Footprint",
+      "subtitle": "Bringing Colombia's Freshness to the World",
+      "description": "Discover how our premium mangoes connect continents. From the sunny plantations of Colombia to the most demanding markets around the world, each destination represents a promise of quality and flavor."
+    },
+    "informative": {
+      "title": "Excellence at Every Stage",
+      "subtitle": "Discover the pillars of our quality",
+      "items": [
+        {
+          "title": "Selected Farms",
+          "description": "We partner with carefully chosen Colombian farms, where each mango is cultivated with dedication and sustainable practices.",
+          "image": "/images/mango/farms.jpg"
+        },
+        {
+          "title": "Quality Certifications",
+          "description": "Our processes meet the highest international standards, backed by certifications that guarantee excellence.",
+          "image": "/images/mango/quality.jpg"
+        },
+        {
+          "title": "Premium Products",
+          "description": "We offer top-quality mangoes, rigorously selected to ensure the best flavor, texture, and freshness in every shipment.",
+          "image": "/images/mango/products.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "subtitle": "Our commitment to quality",
+      "items": [
+        {
+          "title": "Colombian Agricultural Institute",
+          "description": "We adhere to ICA regulations, ensuring top quality and safety. Our PTO USA and EU certifications guarantee compliance with US and EU market standards, including traceability and quality requirements.",
+          "image": "/images/mango/ica.png"
+        },
+        {
+          "title": "Global G.A.P. (in process)",
+          "description": "This certification supports our responsible farming practices, ensuring food safety and sustainability across all our farms.",
+          "image": "/images/mango/globalgap.png"
+        }
+      ]
+    }
+  },
+  "home": {
+    "seo": {
+      "title": "Premium Colombian Fruit Export",
+      "description": "Leading supplier of tropical and exotic fruits from Colombia. We offer high-quality fresh fruits for importers and distributors in the USA, Europe and Asia."
+    },
+    "hero": {
+      "title": "We export the juiciest fruit",
+      "subtitle": "Committed to Our People and Our Land",
+      "description": "At TropiFresh, we partner with local farmers in Colombia to create opportunities and support sustainable growth. Every fruit we export reflects our dedication to the community and social responsibility.",
+      "cta": "Learn more"
+    },
+    "stats": {
+      "title": "From the field to your warehouse",
+      "subtitle": "Relevant facts",
+      "items": [
+        {
+          "title": "Global reach",
+          "description": "Tons exported worldwide",
+          "value": 213.1
+        },
+        {
+          "title": "Farmer Network",
+          "description": "allied farmers",
+          "value": 30
+        },
+        {
+          "title": "Direct job creation",
+          "description": "direct employment opportunities",
+          "value": 120
+        },
+        {
+          "title": "Indirect job creation",
+          "description": "indirect employment opportunities",
+          "value": 1200
+        }
+      ]
+    },
+    "exporting": {
+      "title": "EXPORT FRUITS WITH US!",
+      "subtitle": "Our Global Footprint",
+      "description": "We export fruit across more than 15 destinations, connecting continents by bringing the rich culture and authentic flavors of Colombia to international markets. Each shipment reflects our commitment to quality, sharing a taste of Colombia with the world."
+    },
+    "informative": {
+      "title": "Excellence at Every Stage",
+      "subtitle": "Discover the pillars of our quality",
+      "items": [
+        {
+          "title": "Our Packing Facility",
+          "description": "Located in Santa Marta, we use cutting-edge technology to ensure each fruit is carefully selected, washed, and classified for optimal freshness and quality.",
+          "image": "/images/Quality-Certifications.JPG"
+        },
+        {
+          "title": "Our Farmers",
+          "description": "Meet our farming legends. Our certified partnerships allow us to provide the highest quality and sustainability. Quality fruit, happy farmers and a lot of heart!",
+          "image": "/images/agricultores.png"
+        },
+        {
+          "title": "Certifications",
+          "description": "We're on a certification spree. Because our fruits should come with a stamp of high quality.",
+          "image": "/images/Selected-Farms.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certifications",
+      "subtitle": "Our commitment to quality CERTIFICATIONS",
+      "items": [
+        {
+          "title": "ICA ( Colombian Agricultural Institute)",
+          "description": "We adhere to ICA regulations, ensuring top quality and safety, including traceability and quality requirements.",
+          "image": "/images/mango/ica.png"
+        },
+        {
+          "title": "Global GAP (in process)",
+          "description": "This certification supports our responsible farming practices, ensuring food safety and sustainability across all our farms.",
+          "image": "/images/mango/globalgap.png"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "subtitle": "Your next partner is just a message away",
+    "description": "Our team of experts is ready to address your inquiries and specific needs. Contact us today and discover how we can be your ideal partner in importing premium Colombian fruits.",
+    "form": {
+      "name": {
+        "label": "First Name",
+        "placeholder": "John"
+      },
+      "last-name": {
+        "label": "Last Name",
+        "placeholder": "Doe"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "john.doe@email.com"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+1 (706) 206 9398"
+      },
+      "company": {
+        "label": "Company",
+        "placeholder": "Brave agency"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Enter your message"
+      },
+      "submit": "Let's Talk",
+      "success": {
+        "title": "Thank you for reaching out!",
+        "description": "We will get back to you shortly.",
+        "another": "Send another message"
+      }
+    }
+  }
+}

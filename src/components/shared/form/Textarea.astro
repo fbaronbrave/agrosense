@@ -1,0 +1,29 @@
+---
+import { cn } from "@/lib/utils";
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"textarea"> {
+  class?: string;
+  label: string;
+  name: string;
+}
+
+const { class: className, label, name, ...props } = Astro.props;
+---
+
+<div class={cn("w-full", className)}>
+  <label
+    for={`input-${name}`}
+    class="block text-sm font-semibold leading-6 text-gray-900"
+  >
+    {label}
+  </label>
+  <div class="mt-1">
+    <textarea
+      {...props}
+      name={name}
+      id={`input-${name}`}
+      class="bg-white p-4 box-border w-full rounded-md text-black outline-none border focus:border-primary disabled:bg-gray-100 disabled:border-neutral-300 field-content min-h-[130px]"
+    ></textarea>
+  </div>
+</div>

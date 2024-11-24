@@ -1,0 +1,145 @@
+---
+import SocialMedia from "@/const/SocialMedia";
+import { t } from "i18next";
+import { Trans } from "astro-i18next/components";
+import ArrowUpRight from "../shared/icons/ArrowUpRight.astro";
+import { cn } from "@/lib/utils";
+
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+---
+
+<div class={cn("w-ful h-screen md:h-[100dvh] relative z-50 section", className)}>
+  <div class="relative w-full h-full">
+    <div
+      class="w-full h-full max-w-7xl mx-auto relative flex justify-center items-center z-10 px-6"
+    >
+      <div
+        class="w-full h-fit lg:h-full relative z-10 grid grid-cols-1 grid-rows-[auto,auto] lg:grid-rows-1 lg:grid-cols-2 justify-center items-center gap-4 md:gap-10"
+      >
+        <div class="space-y-4 sm:space-y-10 order-last lg:order-none section-content">
+          <h1>
+            <span
+              class="block font-bold text-secondary text-lg md:text-2xl uppercase text-center lg:text-left"
+            >
+              {t("home.hero.title")}
+            </span>
+            <span
+              class="block font-black text-primary text-4xl sm:text-5xl md:text-6xl xl:text-7xl uppercase transition text-center lg:text-left text-balance"
+            >
+              <Trans i18nKey="home.hero.subtitle">
+                Tahiti Lime <br /> to the World
+              </Trans>
+            </span>
+          </h1>
+
+          <p
+            class="text-black text-center lg:text-left max-w-lg lg:max-w-none mx-auto text-pretty"
+          >
+            {t("home.hero.description")}
+          </p>
+
+          <a
+            href="#contact"
+            class="mx-auto lg:m-0 group w-fit flex uppercase text-secondary bg-secondary-50 border border-secondary rounded-full hover:bg-secondary-100 transition"
+          >
+            <span class="block py-2 px-6 box-border font-medium">
+              {t("home.hero.cta")}
+            </span>
+            <div
+              class="aspect-square w-auto h-full bg-secondary text-white rounded-full p-1.5 box-border"
+            >
+              <ArrowUpRight
+                class="size-8 m-auto rotate-45 group-hover:rotate-90 transition"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div class="order-first lg:order-none section-img">
+          <img
+            src="/images/homeslidernew.JPG"
+            alt="mango tahiti"
+            class="w-full h-auto object-cover max-w-lg xl:max-w-2xl mx-auto pointer-events-none"
+            loading="eager"
+          />
+        </div>
+      </div>
+
+      <div
+        class="hidden absolute lg:flex justify-center lg:justify-start items-center gap-4 z-10 bottom-6 sm:bottom-10 inset-x-0 px-6 box-border social-media"
+      >
+        {
+          SocialMedia.filter((item) => item.route).map((item) => (
+            <a
+              href={item.route}
+              target="_blank"
+              class="group border border-primary rounded-full p-2 aspect-square hover:border-black"
+            >
+              <span class="sr-only">{item.name}</span>
+              <item.icon class="size-5 text-primary group-hover:text-black transition" />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const section = document.querySelector(".section");
+  const content = section?.querySelector(".section-content");
+  const img = section?.querySelector(".section-img");
+  const socialMedia = section?.querySelector('.social-media');
+
+  if (section && content && socialMedia && img) {
+    const children = content.children as unknown as HTMLElement[];
+    const socialItems = socialMedia.children as unknown as HTMLElement[];
+
+    Array.from(children).forEach((child, index) => {
+      child.style.animationDelay = `${(index + 2) * 0.1}s`;
+    });
+
+    Array.from(socialItems).forEach((child, index) => {
+      child.style.animationDelay = `${((index + 2) * 0.1) + 0.5}s`;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          img.classList.remove("animate-fade-in-down", "md:animate-fade-in-left");
+          img.classList.add("animate-fade-in-down", "md:animate-fade-in-left");
+
+          Array.from(children).forEach((child) => {
+            child.classList.add("animate-fade-in-up");
+            child.classList.remove("animate-fade-out-up");
+          });
+
+          Array.from(socialItems).forEach((child) => {
+            child.classList.add("animate-fade-in-up");
+            child.classList.remove("animate-fade-out-up");
+          });
+
+        } else {
+          img.classList.add("animate-fade-in-down", "md:animate-fade-in-left");
+          img.classList.remove("animate-fade-in-down", "md:animate-fade-in-left");
+
+          Array.from(children).forEach((child) => {
+            child.classList.remove("animate-fade-in-up");
+            child.classList.add("animate-fade-out-up");
+          });
+
+          Array.from(socialItems).forEach((child) => {
+            child.classList.remove("animate-fade-in-up");
+            child.classList.add("animate-fade-out-up");
+          });
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -25% 0px' });
+
+    observer.observe(section);
+  }
+</script>

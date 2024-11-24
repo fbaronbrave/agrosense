@@ -1,0 +1,344 @@
+{
+  "nav": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "limon",
+      "url": "/limon"
+    },
+    {
+      "title": "Mango",
+      "url": "/mango"
+    },
+    {
+      "title": "Export",
+      "url": "/"
+    },
+    {
+      "title": "Boerderijen",
+      "url": "/"
+    },
+    {
+      "title": "Contact",
+      "url": "/"
+    },
+    {
+      "title": "Algemene voorwaarden",
+      "url": "/terms-conditions"
+    }
+  ],
+  "footer": {
+    "newsletter": {
+      "title": "Abonneer op onze nieuwsbrief",
+      "subtitle": "Het laatste nieuws, artikelen en bronnen, wekelijks in uw inbox.",
+      "form": {
+        "label": "E-mail",
+        "placeholder": "jan.jansen@email.com",
+        "submit": "Abonneren"
+      }
+    },
+    "subfooter": "Ontworpen en ontwikkeld door"
+  },
+  "common": {
+    "learn-more": "Lees meer"
+  },
+  "limon": {
+    "seo": {
+      "title": "Premium Colombiaanse Fruitexport",
+      "description": "Toonaangevende leverancier van tropisch en exotisch fruit uit Colombia. We bieden hoogwaardige verse vruchten voor importeurs en distributeurs in de VS, Europa en Azië."
+    },
+    "hero": {
+      "title": "De Smaak van Colombia",
+      "subtitle": "Limón Tahití<br /> voor de Wereld",
+      "description": "We brengen de levendige smaak van Colombiaanse Limón Tahití naar elke hoek van de wereld. Elke limoen wordt met passie geteeld en met trots geëxporteerd.",
+      "cta": "Aan de slag!"
+    },
+    "stats": {
+      "title": "Waarom Kiezen voor Tropifresh Limón Tahití?",
+      "subtitle": "Met passie geteeld en met trots geëxporteerd",
+      "items": [
+        {
+          "title": "Wereldwijde Export",
+          "description": "Onze Limón Tahití overschrijden grenzen en brengen het beste van Colombia direct bij u thuis, zonder aan versheid in te boeten.",
+          "icon": "🌍"
+        },
+        {
+          "title": "Gecertificeerde Kwaliteit",
+          "description": "We hebben de <strong>ICA-certificering</strong> uit Colombia, wat garandeert dat onze limoenen voldoen aan de hoogste internationale normen.",
+          "icon": "🍃"
+        },
+        {
+          "title": "Ongeëvenaarde Smaak",
+          "description": "De perfecte balans tussen zuur en zoet, ideaal om elk recept om te toveren tot een culinair meesterwerk.",
+          "icon": "🍋"
+        },
+        {
+          "title": "Het Hele Jaar Door Beschikbaar",
+          "description": "Ongeacht het seizoen, je hebt altijd toegang tot onze verse limoenen, want bij Tropifresh kent kwaliteit geen laagseizoen.",
+          "icon": "📅"
+        }
+      ]
+    },
+    "our-story": {
+      "title": "Van Onze Boerderij naar Uw Groenteboer",
+      "subtitle": "Ons Verhaal",
+      "description": "We zijn trots pioniers te zijn in maritieme fruitexport, en openen nieuwe deuren voor de Colombiaanse landbouw. Achter elke limoen staat ons engagement voor duurzaamheid, ondersteuning van landbouwgemeenschappen en bescherming van ons prachtige milieu."
+    },
+    "testimonials": {
+      "title": "Wat Onze Klanten Zeggen",
+      "subtitle": "Lees wat onze tevreden klanten zeggen over de geweldige kwaliteit en smaak",
+      "items": [
+        {
+          "message": "Tropifresh's Limón Tahití zijn gewoon de beste die ik ooit heb geproefd. Hun versheid en smaak springen er echt uit in elk gerecht. Zeer aanbevolen!",
+          "author": "Carla M."
+        },
+        {
+          "message": "Onze cocktails zijn nog nooit zo goed geweest. Deze limoenen zijn de ster van onze drankjes.",
+          "author": "Javier G."
+        }
+      ]
+    },
+    "call-to-action": {
+      "title": "Klaar om Versheid naar <br />Uw Bedrijf te Brengen?",
+      "description": "Wacht niet langer! Vul het onderstaande formulier in en begin te genieten van de beste Limón Tahití uit Colombia. Ons team staat klaar om je te helpen jouw producten buitengewoon te maken.",
+      "cta": "Folder downloaden!"
+    }
+  },
+  "mango": {
+    "seo": {
+      "title": "Premium Colombiaanse Fruitexport",
+      "description": "Toonaangevende leverancier van tropische en exotische vruchten uit Colombia. We bieden hoogwaardige verse vruchten voor importeurs en distributeurs in de VS, Europa en Azië."
+    },
+    "hero": {
+      "title": "De Zoetste Smaak van Colombia",
+      "subtitle": "Mango<br /> de Azúcar",
+      "description": "We brengen de rijke, verrukkelijke smaak van Colombia's suikermango's naar elke uithoek van de wereld. Met zorg gekweekt en met trots verscheept, bieden onze mango's een tropische ervaring in elke hap.",
+      "cta": "Folder downloaden!"
+    },
+    "stats": {
+      "title": "Van boerderij naar tafel",
+      "subtitle": "Onze impact in cijfers",
+      "items": [
+        {
+          "title": "Wereldwijd bereik",
+          "description": "ton wereldwijd geëxporteerd",
+          "value": 213
+        },
+        {
+          "title": "Amerikaanse markt",
+          "description": "kg mango's <br /> geëxporteerd naar de VS",
+          "value": 154513
+        },
+        {
+          "title": "Boerennetwerk",
+          "description": "aangesloten boeren",
+          "value": 330
+        },
+        {
+          "title": "Directe banencreatie",
+          "description": "directe <br /> werkgelegenheid",
+          "value": 120
+        },
+        {
+          "title": "Indirecte banencreatie",
+          "description": "indirecte <br /> werkgelegenheid",
+          "value": 1200
+        },
+        {
+          "title": "Werkgelegenheid",
+          "description": "gecreëerde <br /> banen",
+          "value": 1320
+        }
+      ]
+    },
+    "exporting": {
+      "title": "Onze wereldwijde voetafdruk",
+      "subtitle": "Colombia's frisheid naar de wereld brengen",
+      "description": "Ontdek hoe onze premium mango's continenten verbinden. Van de zonnige plantages van Colombia tot de meest veeleisende markten over de hele wereld, elke bestemming vertegenwoordigt een belofte van kwaliteit en smaak."
+    },
+    "informative": {
+      "title": "Uitmuntendheid in elke fase",
+      "subtitle": "Ontdek de pijlers van onze kwaliteit",
+      "items": [
+        {
+          "title": "Geselecteerde boerderijen",
+          "description": "We werken samen met zorgvuldig gekozen Colombiaanse boerderijen, waar elke mango met toewijding en duurzame praktijken wordt geteeld.",
+          "image": "/images/mango/farms.jpg"
+        },
+        {
+          "title": "Kwaliteitscertificeringen",
+          "description": "Onze processen voldoen aan de hoogste internationale normen, ondersteund door certificeringen die uitmuntendheid garanderen.",
+          "image": "/images/mango/quality.jpg"
+        },
+        {
+          "title": "Premium producten",
+          "description": "We bieden topkwaliteit mango's, streng geselecteerd om de beste smaak, textuur en versheid in elke zending te garanderen.",
+          "image": "/images/mango/products.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificeringen",
+      "subtitle": "Onze toewijding aan kwaliteit",
+      "items": [
+        {
+          "title": "Colombiaans Landbouwinstituut",
+          "description": "We volgen de ICA-regelgeving, wat topkwaliteit en veiligheid garandeert. Onze PTO-certificeringen voor de VS en EU waarborgen naleving van marktstandaarden, inclusief traceerbaarheids- en kwaliteitseisen.",
+          "image": "/images/mango/ica.png"
+        },
+        {
+          "title": "Global G.A.P.",
+          "description": "Deze certificering ondersteunt onze verantwoorde landbouwpraktijken en zorgt voor voedselveiligheid en duurzaamheid op al onze boerderijen.",
+          "image": "/images/mango/globalgap.png"
+        },
+        {
+          "title": "FDA",
+          "description": "Het naleven van HACCP-voorschriften onderstreept onze toewijding aan het handhaven van uitmuntendheid in elke productiefase.",
+          "image": "/images/mango/fda.svg"
+        },
+        {
+          "title": "Business Alliance for Secure Commerce",
+          "description": "Deze certificering versterkt onze inzet voor de beveiliging van de toeleveringsketen en beschermt onze producten en activiteiten tegen bedreigingen en risico's.",
+          "image": "/images/mango/basc.svg"        }
+      ]
+    }
+  },
+  "home": {
+    "seo": {
+      "title": "Premium Colombiaanse Fruitexport",
+      "description": "Toonaangevende leverancier van tropische en exotische vruchten uit Colombia. We bieden hoogwaardige verse vruchten voor importeurs en distributeurs in de VS, Europa en Azië."
+    },
+    "hero": {
+      "title": "De Zoetste Smaak van Colombia",
+      "subtitle": "Mango<br /> de Azúcar",
+      "description": "We brengen de rijke, verrukkelijke smaak van Colombia's suikermango's naar elke uithoek van de wereld. Met zorg gekweekt en met trots verscheept, bieden onze mango's een tropische ervaring in elke hap.",
+      "cta": "Folder downloaden!"
+    },
+    "stats": {
+      "title": "Van boerderij naar tafel",
+      "subtitle": "Onze impact in cijfers",
+      "items": [
+        {
+          "title": "Wereldwijd bereik",
+          "description": "ton wereldwijd geëxporteerd",
+          "value": 213
+        },
+        {
+          "title": "Amerikaanse markt",
+          "description": "kg mango's <br /> geëxporteerd naar de VS",
+          "value": 154513
+        },
+        {
+          "title": "Boerennetwerk",
+          "description": "aangesloten boeren",
+          "value": 330
+        },
+        {
+          "title": "Directe banencreatie",
+          "description": "directe <br /> werkgelegenheid",
+          "value": 120
+        },
+        {
+          "title": "Indirecte banencreatie",
+          "description": "indirecte <br /> werkgelegenheid",
+          "value": 1200
+        },
+        {
+          "title": "Werkgelegenheid",
+          "description": "gecreëerde <br /> banen",
+          "value": 1320
+        }
+      ]
+    },
+    "exporting": {
+      "title": "Onze wereldwijde voetafdruk",
+      "subtitle": "Colombia's frisheid naar de wereld brengen",
+      "description": "Ontdek hoe onze premium mango's continenten verbinden. Van de zonnige plantages van Colombia tot de meest veeleisende markten over de hele wereld, elke bestemming vertegenwoordigt een belofte van kwaliteit en smaak."
+    },
+    "informative": {
+      "title": "Uitmuntendheid in elke fase",
+      "subtitle": "Ontdek de pijlers van onze kwaliteit",
+      "items": [
+        {
+          "title": "Geselecteerde boerderijen",
+          "description": "We werken samen met zorgvuldig gekozen Colombiaanse boerderijen, waar elke mango met toewijding en duurzame praktijken wordt geteeld.",
+          "image": "/images/mango/farms.jpg"
+        },
+        {
+          "title": "Kwaliteitscertificeringen",
+          "description": "Onze processen voldoen aan de hoogste internationale normen, ondersteund door certificeringen die uitmuntendheid garanderen.",
+          "image": "/images/mango/quality.jpg"
+        },
+        {
+          "title": "Premium producten",
+          "description": "We bieden topkwaliteit mango's, streng geselecteerd om de beste smaak, textuur en versheid in elke zending te garanderen.",
+          "image": "/images/mango/products.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificeringen",
+      "subtitle": "Onze toewijding aan kwaliteit",
+      "items": [
+        {
+          "title": "Colombiaans Landbouwinstituut",
+          "description": "We volgen de ICA-regelgeving, wat topkwaliteit en veiligheid garandeert. Onze PTO-certificeringen voor de VS en EU waarborgen naleving van marktstandaarden, inclusief traceerbaarheids- en kwaliteitseisen.",
+          "image": "/images/mango/ica.png"
+        },
+        {
+          "title": "Global G.A.P.",
+          "description": "Deze certificering ondersteunt onze verantwoorde landbouwpraktijken en zorgt voor voedselveiligheid en duurzaamheid op al onze boerderijen.",
+          "image": "/images/mango/globalgap.png"
+        },
+        {
+          "title": "FDA",
+          "description": "Het naleven van HACCP-voorschriften onderstreept onze toewijding aan het handhaven van uitmuntendheid in elke productiefase.",
+          "image": "/images/mango/fda.svg"
+        },
+        {
+          "title": "Business Alliance for Secure Commerce",
+          "description": "Deze certificering versterkt onze inzet voor de beveiliging van de toeleveringsketen en beschermt onze producten en activiteiten tegen bedreigingen en risico's.",
+          "image": "/images/mango/basc.svg"        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Laten we contact opnemen",
+    "subtitle": "Uw volgende premium fruitpartner is slechts een bericht verwijderd",
+    "description": "Ons team van experts staat klaar om uw vragen en specifieke behoeften te behandelen. Neem vandaag nog contact met ons op en ontdek hoe we uw ideale partner kunnen zijn bij het importeren van premium Colombiaanse mango's.",
+    "form": {
+      "name": {
+        "label": "Voornaam",
+        "placeholder": "Jan"
+      },
+      "last-name": {
+        "label": "Achternaam",
+        "placeholder": "Jansen"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "jan.jansen@email.com"
+      },
+      "phone": {
+        "label": "Telefoon",
+        "placeholder": "+1 (706) 206 9398"
+      },
+      "company": {
+        "label": "Bedrijf",
+        "placeholder": "Moedig bureau"
+      },
+      "message": {
+        "label": "Bericht",
+        "placeholder": "Voer uw bericht in"
+      },
+      "submit": "Laten we praten",
+      "success": {
+        "title": "Bedankt voor uw bericht!",
+        "description": "We nemen binnenkort contact met u op.",
+        "another": "Stuur nog een bericht"
+      }
+    }
+  }
+}

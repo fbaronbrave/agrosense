@@ -1,0 +1,51 @@
+---
+export const prerender = true;
+import { AstroSeo } from "@astrolib/seo";
+import Layout from "@/layouts/Layout.astro";
+import Stats from "@/components/limon/stats/Stats.astro";
+import HeroLimon from "@/components/hero/HeroLimon.astro";
+import ContactForm from "@/components/shared/ContactForm.astro";
+import { t, changeLanguage } from "i18next";
+import Testimonials from "@/components/limon/testimonials/Testimonials.astro";
+import CallToAction from "@/components/limon/CallToAction.astro";
+import OurStory from "@/components/limon/Our-Story.astro";
+
+changeLanguage("en");
+
+const seoTitle = t("limon.seo.title") ?? "";
+const seoDescription = t("limon.seo.description") ?? "";
+---
+
+<AstroSeo
+  titleTemplate="Tropifresh | %s"
+  title={seoTitle}
+  description={t("limon.seo.description") ?? ""}
+  canonical="https://tropifresh-astro.vercel.app"
+  openGraph={{
+    url: "https://tropifresh-astro.vercel.app",
+    title: `Tropifresh | ${seoTitle}`,
+    description: seoDescription,
+    site_name: "Tropifresh",
+    images: [],
+  }}
+/>
+
+<Layout class="max-w-none relative space-y-10 md:space-y-20">
+  <div class="absolute -top-20 -z-[2] h-screen w-full bg-[radial-gradient(100%_50%_at_50%_0%,rgba(186,255,0,0.1)_0,rgba(186,255,0,0.05)_50%,rgba(186,255,0,0)_100%)]"></div>
+  <HeroLimon />
+  <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 relative">
+    <Stats class="mt-20 mb-60" />
+  </div>
+  <div class="bg-neutral-50 py-10">
+    <OurStory />
+  </div>
+  <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0">
+    <Testimonials />
+  </div>
+  <div class="bg-secondary py-20 px-4 md:px-8 2xl:px-0 relative">
+    <CallToAction />
+  </div>
+  <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 pb-10 md:pb-20">
+    <ContactForm />
+  </div>
+</Layout>

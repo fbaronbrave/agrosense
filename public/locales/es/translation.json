@@ -1,0 +1,334 @@
+{
+  "nav": [
+    {
+      "title": "Inicio",
+      "url": "/"
+    },
+    {
+      "title": "Limón",
+      "url": "/limon"
+    },
+    {
+      "title": "Mango",
+      "url": "/mango"
+    },
+    {
+      "title": "Exportar",
+      "url": "/"
+    },
+    {
+      "title": "Granjas",
+      "url": "/"
+    },
+    {
+      "title": "Contacto",
+      "url": "/"
+    },
+    {
+      "title": "Términos y Condiciones",
+      "url": "/terms-conditions"
+    }
+  ],
+  "footer": {
+    "newsletter": {
+      "title": "Suscríbete a nuestro boletín",
+      "subtitle": "Las últimas noticias, artículos y recursos, enviados a tu bandeja de entrada semanalmente.",
+      "form": {
+        "label": "Correo Electrónico",
+        "placeholder": "juan.perez@email.com",
+        "submit": "Suscribirse"
+      }
+    },
+    "subfooter": "Diseñado y desarrollado por",
+    "distribution":{
+      "title": "Centro de Distribución",
+      "description":"Zona Franca Las Américas  ",
+      "description2":"Km 16, Ruta Alterna al Puerto - Ruta del Sol II",
+      "description3":"Bodegas 6 y 7 ",
+      "description4": "Santa Marta, Magdalena, Colombia"
+    },
+    "phone":{
+      "label":"Teléfono",
+      "number":"+1 (706) 206 9398"
+    },
+    "email":{
+      "label":"Correo",
+      "mail":"sales@tropifresh.co"
+    }
+  },
+  "common": {
+    "learn-more": "Ver más"
+  },
+  "warning": {
+    "lang": "Disculpa las molestias, estamos trabajando en las traducciones. En caso de que encuentres algún error, ten en cuenta que estamos utilizando inteligencia artificial para ayudarnos con este proceso."
+  },
+  "limon": {
+    "seo": {
+      "title": "Exportación de Frutas Colombianas Premium",
+      "description": "Proveedor líder de frutas tropicales y exóticas de Colombia. Ofrecemos frutas frescas de alta calidad para importadores y distribuidores en EE.UU., Europa y Asia."
+    },
+    "hero": {
+      "title": "El Sabor de Colombia",
+      "subtitle": "Limón Tahití<br /> para el Mundo",
+      "description": "Llevamos el vibrante sabor de los limones Tahití de Colombia a cada rincón del mundo. Cada limón se cultiva con pasión y se exporta con orgullo.",
+      "cta": "¡Comencemos!"
+    },
+    "stats": {
+      "title": "¿Por qué elegir el Limón Tahití Tropifresh?",
+      "subtitle": "Cultivado con pasión y exportado con orgullo",
+      "items": [
+        {
+          "title": "Exportación Global",
+          "description": "Nuestros limones Tahití cruzan fronteras, llevando lo mejor de Colombia directamente a tu puerta, sin perder ni una onza de frescura.",
+          "icon": "🌍"
+        },
+        {
+          "title": "Calidad Certificada",
+          "description": "Tenemos la certificación <strong>ICA</strong> de Colombia, lo que garantiza que nuestros limones cumplan con los más altos estándares internacionales.",
+          "icon": "🍃"
+        },
+        {
+          "title": "Sabor Inigualable",
+          "description": "El equilibrio perfecto entre acidez y dulzura, ideal para convertir cualquier receta en una obra maestra culinaria.",
+          "icon": "🍋"
+        },
+        {
+          "title": "Disponible todo el año",
+          "description": "Sin importar la temporada, siempre tendrás acceso a nuestros frescos limones, porque en Tropifresh, la calidad no conoce temporada baja.",
+          "icon": "📅"
+        }
+      ]
+    },
+    "our-story": {
+      "title": "De Nuestra Granja a Tu Supermercado",
+      "subtitle": "Nuestra Historia",
+      "description": "Nos enorgullece ser pioneros en la exportación marítima de frutas, abriendo nuevas puertas para la industria agrícola colombiana. Detrás de cada limón está nuestro compromiso con la sostenibilidad, apoyando a las comunidades de agricultores y protegiendo nuestro hermoso medio ambiente."
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes",
+      "subtitle": "Escucha a nuestros clientes satisfechos",
+      "items": [
+        {
+          "message": "Los limones Tahití de Tropifresh son simplemente los mejores que he probado. Su frescura y sabor realmente se destacan en cualquier plato. ¡Muy recomendados!",
+          "author": "Carla M."
+        },
+        {
+          "message": "Nuestros cócteles nunca han sido mejores. Estos limones son la estrella de nuestras bebidas.",
+          "author": "Javier G."
+        }
+      ]
+    },
+    "call-to-action": {
+      "title": "¿Listo para traer frescura a <br />tu negocio?",
+      "description": "¡No esperes más! Llena el siguiente formulario y comienza a disfrutar del mejor limón Tahití de Colombia. Nuestro equipo está listo para ayudarte a hacer que tus productos sean extraordinarios.",
+      "cta": "¡Comencemos!"
+    }
+  },
+  "mango": {
+    "seo": {
+      "title": "Exportación de Frutas Premium Colombianas",
+      "description": "Proveedor líder de frutas tropicales y exóticas de Colombia. Ofrecemos frutas frescas de alta calidad para importadores y distribuidores en EE.UU., Europa y Asia."
+    },
+    "hero": {
+      "title": "El Sabor Más Dulce de Colombia:",
+      "subtitle": "Mango<br /> de Azúcar",
+      "description": "Llevamos el rico y delicioso sabor de los mangos azucarados de Colombia a cada rincón del mundo. Cultivados con cuidado y enviados con orgullo, nuestros mangos ofrecen una experiencia tropical en cada bocado.",
+      "cta": "¡Descargar brochure!"
+    },
+    "stats": {
+      "title": "De la granja a la mesa",
+      "subtitle": "Nuestro impacto en números",
+      "items": [
+        {
+          "title": "Alcance global",
+          "description": "toneladas exportadas <br /> a todo el mundo",
+          "value": 213
+        },
+        {
+          "title": "Mercado estadounidense",
+          "description": "kilos de mangos  <br /> exportados a USA",
+          "value": 154513
+        },
+        {
+          "title": "Red de agricultores",
+          "description": "agricultores aliados",
+          "value": 330
+        },
+        {
+          "title": "Creacion de empleo directo",
+          "description": "oportunidades de <br /> empleo directo",
+          "value": 120
+        },
+        {
+          "title": "Creacion de empleo indirecto",
+          "description": "oportunidades de <br /> empleo indirecto",
+          "value": 1200
+        },
+        {
+          "title": "Empleo",
+          "description": "oportunidades de <br /> empleo creadas",
+          "value": 1320
+        }
+      ]
+    },
+    "exporting": {
+      "title": "Nuestra Huella Global",
+      "subtitle": "Llevando la frescura de Colombia al mundo",
+      "description": "Descubre cómo nuestros mangos premium conectan continentes. Desde las soleadas plantaciones de Colombia hasta los mercados más exigentes de América del Norte y Europa, cada destino representa una promesa de calidad y sabor."
+    },
+    "informative": {
+      "title": "Excelencia en Cada Etapa",
+      "subtitle": "Descubre los pilares de nuestra calidad",
+      "items": [
+        {
+          "title": "Granjas Seleccionadas",
+          "description": "Colaboramos con fincas colombianas cuidadosamente elegidas, donde cada mango se cultiva con dedicación y prácticas sostenibles.",
+          "image": "/images/mango/farms.jpg"
+        },
+        {
+          "title": "Certificaciones de Calidad",
+          "description": "Nuestros procesos cumplen con los más altos estándares internacionales, respaldados por certificaciones que garantizan la excelencia.",
+          "image": "/images/mango/quality.jpg"
+        },
+        {
+          "title": "Productos Premium",
+          "description": "Ofrecemos mangos de primera calidad, seleccionados rigurosamente para asegurar el mejor sabor, textura y frescura en cada envío.",
+          "image": "/images/mango/products.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificaciones",
+      "subtitle": "Nuestro compromiso con la calidad",
+      "items": [
+        {
+          "title": "Instituto Colombiano Agropecuario",
+          "description": "Cumplimos con las regulaciones ICA, garantizando máxima calidad y seguridad. Nuestras certificaciones PTO para EE.UU. y la UE aseguran el cumplimiento de los estándares de mercado, incluyendo requisitos de trazabilidad y calidad.",
+          "image": "/images/mango/ica.png"
+        },
+        {
+          "title": "Global G.A.P. (in process)",
+          "description": "Esta certificación respalda nuestras prácticas agrícolas responsables, asegurando la seguridad alimentaria y la sostenibilidad en todas nuestras granjas.",
+          "image": "/images/mango/globalgap.png"
+        }
+      ]
+    }
+  },
+  "home": {
+    "seo": {
+      "title": "Exportación de Frutas Premium Colombianas",
+      "description": "Proveedor líder de frutas tropicales y exóticas de Colombia. Ofrecemos frutas frescas de alta calidad para importadores y distribuidores en EE.UU., Europa y Asia."
+    },
+    "hero": {
+      "title": "Comprometidos con nuestra gente y nuestra tierra",
+      "subtitle": "¡Exportamos la fruta más jugosa!",
+      "description": "En TropiFresh, nos asociamos con agricultores locales de Colombia para crear oportunidades y apoyar el crecimiento sostenible. Cada fruta que exportamos refleja nuestra dedicación a la comunidad y la responsabilidad social.",
+      "cta": "Más información"
+    },
+    "stats": {
+      "title": "Del campo a tu bodega",
+      "subtitle": "Datos relevantes",
+      "items": [
+        {
+          "title": "Alcance global",
+          "description": "Toneladas exportadas a nivel mundial",
+          "value": 213.1
+        },
+        {
+          "title": "Red de agricultores",
+          "description": "agricultores aliados",
+          "value": 30
+        },
+        {
+          "title": "Creacion de empleo directo",
+          "description": "oportunidades de empleo directo",
+          "value": 120
+        },
+        {
+          "title": "Creacion de empleo indirecto",
+          "description": "oportunidades de empleo indirecto",
+          "value": 1200
+        }
+      ]
+    },
+    "exporting": {
+      "title": "EXPORTA FRUTAS CON NOSOTROS!",
+      "subtitle": "Nuestra huella global",
+      "description": "Exportamos fruta a más de 15 destinos, conectando continentes al llevar la rica cultura y los sabores auténticos de Colombia a los mercados internacionales. Cada envío refleja nuestro compromiso con la calidad, compartiendo un pedazo de Colombia con el mundo."
+    },
+    "informative": {
+      "title": "Excelencia en Cada Etapa",
+      "subtitle": "Descubre los pilares de nuestra calidad",
+      "items": [
+        {
+          "title": "Nuestras instalaciones de embalaje",
+          "description": "Ubicados en Santa Marta, utilizamos tecnología de punta para garantizar que cada fruta sea cuidadosamente seleccionada, lavada y clasificada para lograr una frescura y calidad óptimas.",
+          "image": "/images/Quality-Certifications.JPG"
+        },
+        {
+          "title": "Nuestros agricultores",
+          "description": "Conozca a nuestras leyendas agrícolas. Nuestras alianzas certificadas nos permiten ofrecer la más alta calidad y sostenibilidad. ¡Fruta de calidad, agricultores felices y mucho corazón!",
+          "image": "/images/agricultores.png"
+        },
+        {
+          "title": "Certificaciones",
+          "description": "Estamos en plena campaña de certificación, porque nuestras frutas deben venir con un sello de alta calidad.",
+          "image": "/images/Selected-Farms.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "title": "Certificaciones",
+      "subtitle": "Nuestro compromiso con la calidad CERTIFICACIONES",
+      "items": [
+        {
+          "title": "ICA (Instituto Colombiano Agropecuario)",
+          "description": "Nos adherimos a la normativa ICA, garantizando la máxima calidad e inocuidad, incluyendo requisitos de trazabilidad y calidad.",
+          "image": "/images/mango/ica.png"
+        },
+        {
+          "title": "Global GAP",
+          "description": "Esta certificación respalda nuestras prácticas agrícolas responsables, garantizando la seguridad alimentaria y la sostenibilidad en todas nuestras granjas.",
+          "image": "/images/mango/globalgap.png"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "¿Listo para importar frutas colombianas de primera calidad?",
+    "description": "Nuestro equipo de expertos está listo para atender tus consultas y necesidades específicas. Contáctanos hoy y descubre cómo podemos ser tu socio ideal en la importación de frutas premium de Colombia.",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Juan"
+      },
+      "last-name": {
+        "label": "Apellido",
+        "placeholder": "Pérez"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "juan.perez@email.com"
+      },
+      "phone": {
+        "label": "Teléfono",
+        "placeholder": "+1 (706) 206 9398"
+      },
+      "company": {
+        "label": "Empresa",
+        "placeholder": "Agencia Brave"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Escribe tu mensaje"
+      },
+      "submit": "Enviar",
+      "success": {
+        "title": "¡Gracias por contactarnos!",
+        "description": "Nos pondremos en contacto contigo en breve.",
+        "another": "Enviar otro mensaje"
+      }
+    }
+  }
+}

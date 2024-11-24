@@ -1,0 +1,74 @@
+---
+import { t } from "i18next";
+import Title from "../shared/Title.astro";
+---
+
+<section class="w-full py-12 md:py-24 lg:py-32 oursection-section">
+  <div class="container grid items-center gap-10 px-4 md:px-6 md:grid-cols-2">
+    <div class="order-first lg:order-none section-img">
+      <img
+        src="/images/limon/limones-our-new.jpg"
+        alt="mango tahiti"
+        class="w-full h-auto object-cover max-w-lg xl:max-w-2xl mx-auto pointer-events-none"
+        loading="eager"
+      />
+    </div>
+   
+    <div class="space-y-4 oursection-section-content">
+      <Title
+        title={t("limon.our-story.title")}
+        subtitle={String(t("limon.our-story.subtitle"))}
+        class="justify-start items-start [&>*]:text-left [&>h2]:text-pretty"
+      />
+      <p class="max-w-[700px] text-black/70 leading-relaxed">
+        {t("limon.our-story.description")}
+      </p>
+      <a
+        href="#contact"
+        class="w-fit group btn-shiny-parent !px-4 !py-3 bg-primary text-white hover:shadow transition hover:bg-primary-500 disabled:bg-neutral-300 disabled:text-neutral-600 disabled:shadow-none"
+      >
+        <span class="text-sm font-normal group-disabled:text-neutral-400">
+          {t("limon.call-to-action.cta")}
+        </span>
+        <div class="btn-shiny-effect group-disabled:hidden">
+          <div class="relative h-full w-8 bg-white/10"></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const section = document.querySelector(".oursection-section");
+  const video = section?.querySelector(".oursection-video");
+  const content = section?.querySelector(".oursection-section-content");
+
+  if (section && content && video) {
+    const children = content.children as unknown as HTMLElement[];
+    Array.from(children).forEach((child, index) => {
+      child.style.animationDelay = `${(index + 2) * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          video.classList.add("animate-fade-in-right");
+          video.classList.remove("animate-fade-out-right");
+          Array.from(children).forEach((child,) => {
+            child.classList.add("animate-fade-in-up");
+            child.classList.remove("animate-fade-out-up");
+          });
+        } else {
+          video.classList.remove("animate-fade-in-right");
+          Array.from(children).forEach((child) => {
+            child.classList.remove("animate-fade-in-up");
+            child.classList.add("animate-fade-out-up");
+          });
+          video.classList.add("animate-fade-out-right");
+        }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -25% 0px' });
+
+    observer.observe(section);
+  }
+</script>
