@@ -2,7 +2,12 @@
 export const prerender = true;
 import Layout from "@/layouts/Layout.astro";
 import { AstroSeo } from "@astrolib/seo";
-import FilesIcon from "../Fiel-icon.astro";
+import { Image } from "astro:assets";
+import FilesIcon from "../../images/Fiel-icon.svg";
+import FilesPdf1 from "../../images/proteccion-de-datos-personales.pdf";
+import FilesPdf2 from "../../images/codigo-conducta.pdf";
+import FilesPdf3 from "../../images/etica-profesional.pdf";
+import FilesPdf4 from "../../images/manual-sagrilaf.pdf";
 import { changeLanguage } from "i18next";
 
 changeLanguage("ar");
@@ -147,22 +152,43 @@ changeLanguage("ar");
         Management System are as follows:
       </p>
 
-      <ul class="marker:text-primary">
+      <ul class="marker:text-primary icons-descarga">
         <li>
           <a
-          href="https://www.creativekoko.co/"
+          href={FilesPdf1}
+          target="_blank"
           class="text-white text-sm flex justify-start items-base gap-2 group">
-            <FilesIcon class="w-auto h-4 block group-hover:text-black transition" />
+          <Image src={FilesIcon} alt="Una descripción de mi imagen." />
           </a>
+          <p>Proteccion de datos personale</p>
         </li>
         <li>
-         
+          <a
+          href={FilesPdf2}
+          target="_blank"
+          class="text-white text-sm flex justify-start items-base gap-2 group">
+          <Image src={FilesIcon} alt="Una descripción de mi imagen." />
+          </a>
+
+          <p>Codigo de conducta</p>
         </li>
         <li>
-          
+          <a
+          href={FilesPdf3}
+          target="_blank"
+          class="text-white text-sm flex justify-start items-base gap-2 group">
+          <Image src={FilesIcon} alt="Una descripción de mi imagen." />
+          </a>
+          <p>Etica profesional</p>
         </li>
         <li>
-          
+          <a
+          href={FilesPdf4}
+          target="_blank"
+          class="text-white text-sm flex justify-start items-base gap-2 group">
+          <Image src={FilesIcon} alt="Una descripción de mi imagen." />
+          </a>
+          <p>Manual SAGRILAF</p>
         </li>
       </ul>
     </div>
