@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
-import vercel from '@astrojs/vercel/static';
+import vercel from '@astrojs/vercel/serverless';
 import react from "@astrojs/react";
 import playformCompress from "@playform/compress";
 import robotsTxt from "astro-robots-txt";
@@ -14,7 +14,7 @@ export default defineConfig({
     webAnalytics: {
       enabled: true
     },
-    maxDuration: 60
+    maxDuration: 8
   }),
   integrations: [tailwind({
     applyBaseStyles: false
