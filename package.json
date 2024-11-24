@@ -1,5 +1,5 @@
 {
-  "name": "tropifresh-astro",
+  "name": "agrosense-astro",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -42,7 +42,7 @@
     "typescript": "^5.5.4"
   },
   "engines": {
-    "node": ">=18"
+    "node": "18.x"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.14",
