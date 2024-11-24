@@ -9,7 +9,7 @@ import astroI18next from "astro-i18next";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://tropifresh-astro.vercel.app",
+  site: "",
   output: "server",
   adapter: vercel({
     webAnalytics: {
