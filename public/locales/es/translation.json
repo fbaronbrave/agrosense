@@ -74,28 +74,28 @@
       "cta": "¡Comencemos!"
     },
     "stats": {
-      "title": "¿Por qué elegir el Limón Tahití Tropifresh?",
+      "title": "¿Más razones para trabajar con nosotros? ",
       "subtitle": "Cultivado con pasión y exportado con orgullo",
       "items": [
         {
-          "title": "Exportación Global",
-          "description": "Nuestros limones Tahití cruzan fronteras, llevando lo mejor de Colombia directamente a tu puerta, sin perder ni una onza de frescura.",
-          "icon": "🌍"
+          "title": "Productividad optimizada",
+          "description": "Técnicas avanzadas como bioplaguicidas y riego eficiente para sacar lo mejor de tus cultivos.",
+          "icon": "🔝"
         },
         {
-          "title": "Calidad Certificada",
-          "description": "Tenemos la certificación <strong>ICA</strong> de Colombia, lo que garantiza que nuestros limones cumplan con los más altos estándares internacionales.",
-          "icon": "🍃"
+          "title": "Estabilidad financiera",
+          "description": "Pagos puntuales y acuerdos claros.",
+          "icon": "💰"
         },
         {
-          "title": "Sabor Inigualable",
-          "description": "El equilibrio perfecto entre acidez y dulzura, ideal para convertir cualquier receta en una obra maestra culinaria.",
-          "icon": "🍋"
+          "title": "Certificaciones accesibles",
+          "description": "Te acompañamos paso a paso hasta obtener las certificaciones nacionales e internacionales más importantes.",
+          "icon": "✅"
         },
         {
-          "title": "Disponible todo el año",
-          "description": "Sin importar la temporada, siempre tendrás acceso a nuestros frescos limones, porque en Tropifresh, la calidad no conoce temporada baja.",
-          "icon": "📅"
+          "title": "Capacitación especializada",
+          "description": "Aprende sobre las mejores técnicas agrícolas.",
+          "icon": "📝"
         }
       ]
     },
@@ -119,8 +119,8 @@
       ]
     },
     "call-to-action": {
-      "title": "¿Listo para traer frescura a <br />tu negocio?",
-      "description": "¡No esperes más! Llena el siguiente formulario y comienza a disfrutar del mejor limón Tahití de Colombia. Nuestro equipo está listo para ayudarte a hacer que tus productos sean extraordinarios.",
+      "title": "¿Quién está detrás de Agro Sense?",
+      "description": "Un grupo de agrónomos y técnicos agrícolas con más de 20 años de experiencia en el sector, ellos serán los expertos que trabajarán a tu lado ayudándote a obtener mejores resultados.",
       "cta": "¡Comencemos!"
     }
   },
@@ -221,8 +221,8 @@
     },
     "hero": {
       "title": "",
-      "subtitle": "Tu aliado favorito",
-      "description": "En Agrosense, nos asociamos con agricultores locales de Colombia para crear oportunidades y apoyar el crecimiento sostenible.",
+      "subtitle": "TU ALIADO AGRÍCOLA EN COLOMBIA",
+      "description": "Trabajamos día a día para fortalecer el agro colombiano",
       "cta": "Más información"
     },
     "stats": {
@@ -261,34 +261,44 @@
       "subtitle": "Descubre los pilares de nuestra calidad",
       "items": [
         {
-          "title": "Nuestras instalaciones de embalaje",
-          "description": "Ubicados en Santa Marta, utilizamos tecnología de punta para garantizar que cada fruta sea cuidadosamente seleccionada, lavada y clasificada para lograr una frescura y calidad óptimas.",
+          "title": "",
+          "description": "Garantizamos estabilidad con precios justos y pagos puntuales.",
           "image": "/images/Quality-Certifications.JPG"
         },
         {
-          "title": "Nuestros agricultores",
-          "description": "Conozca a nuestras leyendas agrícolas. Nuestras alianzas certificadas nos permiten ofrecer la más alta calidad y sostenibilidad. ¡Fruta de calidad, agricultores felices y mucho corazón!",
+          "title": "",
+          "description": "Hacemos que el proceso de certificación sea claro y accesible.",
           "image": "/images/agricultores.png"
         },
         {
-          "title": "Certificaciones",
-          "description": "Estamos en plena campaña de certificación, porque nuestras frutas deben venir con un sello de alta calidad.",
+          "title": "",
+          "description": "Brindamos acceso a tecnología y capacitaciones para fortalecer tus cultivos.",
+          "image": "/images/Selected-Farms.jpg"
+        },
+        {
+          "title": "",
+          "description": "Facilitamos el acceso a tecnología y capacitaciones para potenciar tus cultivos.",
           "image": "/images/Selected-Farms.jpg"
         }
       ]
     },
     "certifications": {
-      "title": "Certificaciones",
+      "title": "NUESTROS VALORES",
       "subtitle": "Nuestro compromiso con la calidad CERTIFICACIONES",
       "items": [
         {
-          "title": "ICA (Instituto Colombiano Agropecuario)",
-          "description": "Nos adherimos a la normativa ICA, garantizando la máxima calidad e inocuidad, incluyendo requisitos de trazabilidad y calidad.",
+          "title": "Compromiso con el agro",
+          "description": "Creemos en el potencial del campo colombiano.",
           "image": "/images/mango/ica.png"
         },
         {
-          "title": "Global GAP",
-          "description": "Esta certificación respalda nuestras prácticas agrícolas responsables, garantizando la seguridad alimentaria y la sostenibilidad en todas nuestras granjas.",
+          "title": "Sostenibilidad como prioridad",
+          "description": "Cuidamos el presente para garantizar el futuro.",
+          "image": "/images/mango/globalgap.png"
+        },
+        {
+          "title": "Progreso para todos",
+          "description": "Trabajamos de la mano con pequeños y medianos productores.",
           "image": "/images/mango/globalgap.png"
         }
       ]
