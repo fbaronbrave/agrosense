@@ -2,14 +2,16 @@
 export const prerender = true;
 import { AstroSeo } from "@astrolib/seo";
 import Layout from "@/layouts/Layout.astro";
-import Stats from "@/components/mango/stats/homeStats.astro";
+//import Stats from "@/components/mango/stats/homeStats.astro";
 import StatsNew from "@/components/limon/stats/Stats.astro";
 import CallToAction from "@/components/limon/CallToAction.astro";
 //import Exporting from "@/components/exporting/HomeExporting.astro";
 import Informative from "@/components/informative/HomeInformative.astro";
+import Informative2 from "@/components/informative/Informative.astro";
 //import Testimonials from "@/components/limon/testimonials/Testimonials.astro";
-import Certifications from "@/components/certifications/HomeCertifications.astro";
+//import Certifications from "@/components/certifications/HomeCertifications.astro";
 import HeroHome from "@/components/hero/HeroHome.astro";
+import OurStory from "@/components/limon/Our-Story.astro";
 //import ContactForm from "@/components/shared/ContactForm.astro";
 import { t, changeLanguage } from "i18next";
 
@@ -38,17 +40,20 @@ const seoDescription = t("home.seo.description") ?? "";
   <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 relative">
     <StatsNew class="mt-20 mb-60" />
   </div>
+  <div class="bg-neutral-50 py-10">
+    <OurStory />
+  </div>
+  <!--<div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 relative space-y-40 mt-20 pb-40">
+    <Stats />
+  </div> -->
+  <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 relative space-y-40 mt-20 pb-40">
+    <Informative />
+  </div>
   <div class="bg-secondary py-20 px-4 md:px-8 2xl:px-0 relative">
     <CallToAction />
   </div>
   <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 relative space-y-40 mt-20 pb-40">
-    <Stats />
-  </div>
-  <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 relative space-y-40 mt-20 pb-40">
-    <Informative />
-  </div>
-  <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 relative space-y-40 mt-20 pb-40">
-    <Certifications />
+    <Informative2 />
   </div>
   
 </Layout>

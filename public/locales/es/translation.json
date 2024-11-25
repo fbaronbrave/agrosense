@@ -100,9 +100,9 @@
       ]
     },
     "our-story": {
-      "title": "De Nuestra Granja a Tu Supermercado",
-      "subtitle": "Nuestra Historia",
-      "description": "Nos enorgullece ser pioneros en la exportación marítima de frutas, abriendo nuevas puertas para la industria agrícola colombiana. Detrás de cada limón está nuestro compromiso con la sostenibilidad, apoyando a las comunidades de agricultores y protegiendo nuestro hermoso medio ambiente."
+      "title": "TE APOYAMOS",
+      "subtitle": "",
+      "description": "En cada etapa del proceso; desde la capacitación y certificación hasta la comercialización de tus productos. Todo con un enfoque de sostenibilidad, innovación y responsabilidad social."
     },
     "testimonials": {
       "title": "Lo que dicen nuestros clientes",
@@ -177,23 +177,23 @@
       "description": "Descubre cómo nuestros mangos premium conectan continentes. Desde las soleadas plantaciones de Colombia hasta los mercados más exigentes de América del Norte y Europa, cada destino representa una promesa de calidad y sabor."
     },
     "informative": {
-      "title": "Excelencia en Cada Etapa",
-      "subtitle": "Descubre los pilares de nuestra calidad",
+      "title": "NUESTROS VALORES",
+      "subtitle": "Nuestro compromiso con la calidad CERTIFICACIONES",
       "items": [
         {
-          "title": "Granjas Seleccionadas",
-          "description": "Colaboramos con fincas colombianas cuidadosamente elegidas, donde cada mango se cultiva con dedicación y prácticas sostenibles.",
-          "image": "/images/mango/farms.jpg"
+          "title": "Compromiso con el agro",
+          "description": "Creemos en el potencial del campo colombiano.",
+          "image": "/images/compromiso-con-el-agro.jpg"
         },
         {
-          "title": "Certificaciones de Calidad",
-          "description": "Nuestros procesos cumplen con los más altos estándares internacionales, respaldados por certificaciones que garantizan la excelencia.",
-          "image": "/images/mango/quality.jpg"
+          "title": "Sostenibilidad como prioridad",
+          "description": "Cuidamos el presente para garantizar el futuro.",
+          "image": "/images/sostenibilidad-como-prioridad.png"
         },
         {
-          "title": "Productos Premium",
-          "description": "Ofrecemos mangos de primera calidad, seleccionados rigurosamente para asegurar el mejor sabor, textura y frescura en cada envío.",
-          "image": "/images/mango/products.jpg"
+          "title": "Progreso para todos",
+          "description": "Trabajamos de la mano con pequeños y medianos productores.",
+          "image": "/images/progreso-para-todos.png"
         }
       ]
     },
@@ -263,17 +263,17 @@
         {
           "title": "",
           "description": "Garantizamos estabilidad con precios justos y pagos puntuales.",
-          "image": "/images/Quality-Certifications.JPG"
+          "image": "/images/garantizamos estabilidad.png"
         },
         {
           "title": "",
           "description": "Hacemos que el proceso de certificación sea claro y accesible.",
-          "image": "/images/agricultores.png"
+          "image": "/images/hacemos.png"
         },
         {
           "title": "",
           "description": "Brindamos acceso a tecnología y capacitaciones para fortalecer tus cultivos.",
-          "image": "/images/Selected-Farms.jpg"
+          "image": "/images/brindamos-acceso-a-tecnologia-y-capacitaciones-para-fortalecer-tus-cultivos.JPG"
         },
         {
           "title": "",
@@ -289,17 +289,17 @@
         {
           "title": "Compromiso con el agro",
           "description": "Creemos en el potencial del campo colombiano.",
-          "image": "/images/mango/ica.png"
+          "image": "/images/compromiso-con-el-agro.jpg"
         },
         {
           "title": "Sostenibilidad como prioridad",
           "description": "Cuidamos el presente para garantizar el futuro.",
-          "image": "/images/mango/globalgap.png"
+          "image": "/images/sostenibilidad-como-prioridad.png"
         },
         {
           "title": "Progreso para todos",
           "description": "Trabajamos de la mano con pequeños y medianos productores.",
-          "image": "/images/mango/globalgap.png"
+          "image": "/images/progreso-para-todos.png"
         }
       ]
     }

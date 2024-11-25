@@ -101,6 +101,9 @@ html.lenis, html.lenis body {
 .logo-footer { 
   height: 3.5rem !important;
 }
+.franja-de-quienes-somos {
+  background-color: #fcefdd;
+}
 @media (min-width: 1024px) {
   .banner-home{
       height: 63dvh !important;
