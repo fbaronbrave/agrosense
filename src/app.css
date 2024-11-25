@@ -67,4 +67,35 @@ html.lenis, html.lenis body {
 .icons-descarga li {
   max-width: 100px;
   list-style-type: none;
+}
+.banner-home {
+  background-image: url(../src/images/banner-agro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-home .text-primary {
+  font-size: 3.7rem !important;
+  color: #fcefdd;
+}
+.banner-home .text-pretty {
+  color: white;
+}
+.home-agrosense {
+  background-color: #fcefdd;
+}
+.card-info {
+  background-color: #fdf3e7;
+}
+.hola {
+  background-color: #1a4b23;
 } 
+@media (min-width: 1024px) {
+  .banner-home{
+      height: 63dvh !important;
+  }
+}
+@media (min-width: 1200px) {
+  .banner-home{
+      height: 72dvh !important;
+  }
+}

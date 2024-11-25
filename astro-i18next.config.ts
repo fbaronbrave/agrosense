@@ -1,8 +1,8 @@
 /** @type {import('astro-i18next').AstroI18nextConfig} */
 
 const config = {
-  defaultLocale: "en",
-  locales: ["en", "es", "ar"],
+  defaultLocale: "es",
+  locales: ["es", "en", "ar"],
 };
 
 export default config;

@@ -12,7 +12,7 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<div class={cn("w-ful h-screen md:h-[100dvh] relative z-50 section", className)}>
+<div class={cn("w-ful h-screen md:h-[100dvh] relative z-50 section banner-home", className)}>
   <div class="relative w-full h-full">
     <div
       class="w-full h-full max-w-7xl mx-auto relative flex justify-center items-center z-10 px-6"
@@ -59,14 +59,7 @@ const { class: className } = Astro.props;
           </a>
         </div>
 
-        <div class="order-first lg:order-none section-img">
-          <img
-            src="/images/homeslidernew.JPG"
-            alt="mango tahiti"
-            class="w-full h-auto object-cover max-w-lg xl:max-w-2xl mx-auto pointer-events-none"
-            loading="eager"
-          />
-        </div>
+        
       </div>
 
       <div

@@ -1,8 +1,8 @@
 ---
 import { t } from "i18next";
 
-import Navigation from "@/const/Navigation";
-import { LanguageSelector } from "astro-i18next/components";
+//import Navigation from "@/const/Navigation";
+//import { LanguageSelector } from "astro-i18next/components";
 ---
 
 <header class="w-full fixed top-0 z-20 transition-all duration-200">
@@ -20,22 +20,6 @@ import { LanguageSelector } from "astro-i18next/components";
     <div
       class="flex justify-between items-center border-b border-transparent box-border gap-6 animate-fade-in-left delay-400"
     >
-      <nav class="hidden md:flex justify-center items-start gap-6 mx-auto md:mx-0">
-        {
-          Navigation.map((item) => (
-            <a
-              href={t(item.url)}
-              class="text-primary hover:text-black text-base btn-down-line-hover after:bg-black"
-            >
-              {t(item.name)}
-            </a>
-          ))
-        }
-      </nav>
-      <LanguageSelector
-        showFlag={true}
-        class="bg-white px-2 py-1 box-border w-fit h-fit rounded-md text-black outline-none border text-sm"
-      />
     </div>
   </div>
 </header>

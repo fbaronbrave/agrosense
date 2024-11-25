@@ -12,12 +12,12 @@ const SocialMedia = [
   },
   {
     name: "Instagram",
-    route: "https://www.instagram.com/tropifreshco",
+    route: "https://www.instagram.com/agrosense.co",
     icon: Instagram,
   },
   {
     name: "Linkedin",
-    route: "https://www.linkedin.com/company/tropifresh/",
+    route: "https://hu.linkedin.com/company/agrosenseco",
     icon: Linkedin,
   },
   {

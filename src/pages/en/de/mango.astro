@@ -5,13 +5,12 @@ import Layout from "@/layouts/Layout.astro";
 import Stats from "@/components/mango/stats/Stats.astro";
 import Exporting from "@/components/exporting/Exporting.astro";
 import Informative from "@/components/informative/Informative.astro";
-import Testimonials from "@/components/limon/testimonials/Testimonials.astro";
 import Certifications from "@/components/certifications/Certifications.astro";
-import HeroHome from "@/components/hero/HeroHome.astro";
+import HeroMango from "@/components/hero/HeroMango.astro";
 import ContactForm from "@/components/shared/ContactForm.astro";
 import { t, changeLanguage } from "i18next";
 
-changeLanguage("es");
+changeLanguage("en");
 
 const seoTitle = t("mango.seo.title") ?? "";
 const seoDescription = t("mango.seo.description") ?? "";
@@ -32,12 +31,12 @@ const seoDescription = t("mango.seo.description") ?? "";
 
 <Layout class="max-w-none relative">
   <div class="absolute -top-20 -z-[2] h-screen w-full bg-[radial-gradient(100%_50%_at_50%_0%,rgba(246,137,9,0.1)_0,rgba(246,137,9,0.05)_50%,rgba(246,137,9,0)_100%)]"></div>
-  <HeroHome />
+  <HeroMango />
   <div class="max-w-7xl mx-auto px-4 md:px-8 2xl:px-0 relative space-y-40 mt-20 pb-40">
     <Stats />
     <Exporting />
     <Informative />
     <Certifications />
-    <Testimonials />
+    <ContactForm />
   </div>
 </Layout>

@@ -49,11 +49,11 @@
     },
     "phone":{
       "label":"Teléfono",
-      "number":"+1 (706) 206 9398"
+      "number":"+1 (706) 714 2563"
     },
     "email":{
       "label":"Correo",
-      "mail":"sales@tropifresh.co"
+      "mail":"info@agrosensecol.com"
     }
   },
   "common": {
@@ -220,9 +220,9 @@
       "description": "Proveedor líder de frutas tropicales y exóticas de Colombia. Ofrecemos frutas frescas de alta calidad para importadores y distribuidores en EE.UU., Europa y Asia."
     },
     "hero": {
-      "title": "Comprometidos con nuestra gente y nuestra tierra",
-      "subtitle": "¡Exportamos la fruta más jugosa!",
-      "description": "En TropiFresh, nos asociamos con agricultores locales de Colombia para crear oportunidades y apoyar el crecimiento sostenible. Cada fruta que exportamos refleja nuestra dedicación a la comunidad y la responsabilidad social.",
+      "title": "",
+      "subtitle": "Tu aliado favorito",
+      "description": "En Agrosense, nos asociamos con agricultores locales de Colombia para crear oportunidades y apoyar el crecimiento sostenible.",
       "cta": "Más información"
     },
     "stats": {

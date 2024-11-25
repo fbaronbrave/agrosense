@@ -2,15 +2,9 @@
 export const prerender = true;
 import Layout from "@/layouts/Layout.astro";
 import { AstroSeo } from "@astrolib/seo";
-import { Image } from "astro:assets";
-import FilesIcon from "../images/Fiel-icon.svg";
-import FilesPdf1 from "../images/proteccion-de-datos-personales.pdf";
-import FilesPdf2 from "../images/codigo-conducta.pdf";
-import FilesPdf3 from "../images/etica-profesional.pdf";
-import FilesPdf4 from "../images/manual-sagrilaf.pdf";
 import { changeLanguage } from "i18next";
 
-changeLanguage("es");
+changeLanguage("en");
 ---
 
 <AstroSeo
@@ -89,12 +83,12 @@ changeLanguage("es");
     </div>
     <div class="space-y-4">
       <h2 class="font-bold text-xl text-primary text-balance mb-6">
-        Corporate Social Responsibility Policy
+        Corporate social Responsibility Policy
       </h2>
       <p>
         At <strong>Tropi Fresh Colombia S.A.S</strong>, we assume our corporate
         social responsibility by promoting and protecting human rights in all
-        our operations. We prevent labor abuse, discrimination, forced labor
+        our operations. We prevent labor abuse, discrimination, forced labor,
         and child labor, through rigorous control policies through ethical and
         sustainable practices in our value chain.
       </p><p>
@@ -138,57 +132,6 @@ changeLanguage("es");
           specific controls to prevent illicit activities, corruption, bribery,
           and money laundering, reducing the risks associated with these
           threats.
-        </li>
-      </ul>
-    </div>
-
-
-    <div class="space-y-4">
-      <h2 class="font-bold text-xl text-primary text-balance mb-6">
-        Políticas
-      </h2>
-      <p>
-        The safety objectives related to the company's BASC Safety and Control
-        Management System are as follows:
-      </p>
-
-      <ul class="marker:text-primary icons-descarga">
-        <li>
-          <a
-          href={FilesPdf1}
-          target="_blank"
-          class="text-white text-sm flex justify-start items-base gap-2 group">
-          <Image src={FilesIcon} alt="Una descripción de mi imagen." />
-          </a>
-          <p>Proteccion de datos personale</p>
-        </li>
-        <li>
-          <a
-          href={FilesPdf2}
-          target="_blank"
-          class="text-white text-sm flex justify-start items-base gap-2 group">
-          <Image src={FilesIcon} alt="Una descripción de mi imagen." />
-          </a>
-
-          <p>Codigo de conducta</p>
-        </li>
-        <li>
-          <a
-          href={FilesPdf3}
-          target="_blank"
-          class="text-white text-sm flex justify-start items-base gap-2 group">
-          <Image src={FilesIcon} alt="Una descripción de mi imagen." />
-          </a>
-          <p>Etica profesional</p>
-        </li>
-        <li>
-          <a
-          href={FilesPdf4}
-          target="_blank"
-          class="text-white text-sm flex justify-start items-base gap-2 group">
-          <Image src={FilesIcon} alt="Una descripción de mi imagen." />
-          </a>
-          <p>Manual SAGRILAF</p>
         </li>
       </ul>
     </div>

@@ -33,6 +33,7 @@ module.exports = {
           800: "#9c4f10",
           900: "#7e4210",
           950: "#441f06",
+          hola: "#1a4b23"
         },
         secondary: {
           DEFAULT: "#20725F",

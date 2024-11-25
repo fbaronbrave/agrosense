@@ -3,14 +3,14 @@ const Navigation = [
     name: "nav.0.title",
     url: "nav.0.url",
   },
-  {
-     name: "nav.1.title",
-     url: "nav.1.url",
-  },
-  {
-     name: "nav.2.title",
-     url: "nav.2.url",
-  },
+  //{
+  //   name: "nav.1.title",
+  //   url: "nav.1.url",
+  //},
+  //{
+  //   name: "nav.2.title",
+  //   url: "nav.2.url",
+  //},
   // {
   //   name: "nav.3.title",
   //   url: "nav.3.url",
