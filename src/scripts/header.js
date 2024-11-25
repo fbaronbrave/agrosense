@@ -10,9 +10,9 @@ const headerScripts = () => {
 
         if (window.scrollY > 300) {
           header.classList.add("top-0");
-          header.classList.add("bg-white/70", "backdrop-blur");
+          header.classList.add("bg-white/70", "backdrop-blur", "fixed-top-logo");
         } else {
-          header.classList.remove("bg-white/70", "backdrop-blur");
+          header.classList.remove("bg-white/70", "backdrop-blur", "fixed-top-logo");
         }
 
         if (window.scrollY > window.innerHeight - header.offsetHeight / 2) {
@@ -27,6 +27,7 @@ const headerScripts = () => {
           } else {
             header.classList.remove('duration-200')
             header.classList.add('duration-700')
+            header.classList.add('newwwwwww-header')
             header.classList.add("top-0");
             header.classList.remove("-top-full");
           }

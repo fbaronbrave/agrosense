@@ -36,7 +36,7 @@ module.exports = {
           hola: "#1a4b23"
         },
         secondary: {
-          DEFAULT: "#20725F",
+          DEFAULT: "#1a4b23",
           50: "#f2fbf8",
           100: "#d2f5e8",
           200: "#a6e9d2",

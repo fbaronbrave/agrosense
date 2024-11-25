@@ -88,7 +88,19 @@ html.lenis, html.lenis body {
 }
 .hola {
   background-color: #1a4b23;
+}
+.logo-new {
+  height: 4.5rem !important;
+}
+.fixed-top-logo {
+  background-color: #1a4b23;
 } 
+.fixed-top-logo .logo-new {
+  height: 2.5rem !important;
+}
+.logo-footer { 
+  height: 3.5rem !important;
+}
 @media (min-width: 1024px) {
   .banner-home{
       height: 63dvh !important;
