@@ -76,6 +76,7 @@ html.lenis, html.lenis body {
 .banner-home .text-primary {
   font-size: 3.7rem !important;
   color: #fcefdd;
+  line-height: normal;
 }
 .banner-home .text-pretty {
   color: white;
